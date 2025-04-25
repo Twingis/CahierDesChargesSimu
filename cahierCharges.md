@@ -52,8 +52,11 @@ Il faudra certainement ajouté une route POST dans l'api qui attendrai dans le b
 {
   "parameters": {
     "population": 853,
-    "voirie": 12450,
-    "etp": 0
+    "roads": 12.45,
+    "etp": 0,
+    "mailBox": 0,
+    "domainName": 0,
+    "hostingSite": 0
   },
   "formules": ["uri formule1", "uri formule2"]
 }
@@ -63,7 +66,7 @@ Retour :
 
 ```json
 {
-  "simulatedPrice": 0,
+  "simulatedPrice": 0.0,
   "formulesPrices": [0, 0, 0]
 }
 ```
