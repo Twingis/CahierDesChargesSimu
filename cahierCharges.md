@@ -35,8 +35,8 @@ Je souhaite faire une page entière dédiée au simulateur, page contentant le f
 
 ##### Wireframe
 
-![Wireframe](images/wireframe.png)
-![WireframeModale](images/modaleBouton+.png)
+![Wireframe](images/1.png)
+![WireframeModale](images/2.png)
 
 ##### Intégration dans le site
 
