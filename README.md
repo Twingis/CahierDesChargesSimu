@@ -14,18 +14,14 @@ Ce simulateur devra s'intégrer à l'application déjà existante : **Numérobis
 
 ### Expression fonctionnelle du besoin
 
-| Type Fonction | Fonction                                                    | Critères d'appréciation                                                              | Coefficient |
-| :-----------: | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ | :---------: |
-|      FP       | Calculer le prix final en fonction des adhésions simulées   | Renvoie le prix correct en un temps raisonnable                                      |      5      |
-|      FC1      | Intégré sur le site interne                                 | Lien facilement trouvable sur le site                                                |      5      |
-|      FC2      | Utilisé l'API **Numérobis** déjà existante                  | La/les nouvelles routes n'explosent pas l'API                                        |      5      |
-|      FC3      | Formulaire intuitif et facilement completable               | Formulaire d'une taille raisonnable                                                  |      3      |
-|      FC4      | Pouvoir facilement supprimer une politique de la simulation | Facilement supprimable sans supprimé les autres                                      |      3      |
-|      FC5      | Faire attention aux prix planchers/plafonds                 | Aucun résultat de dépasse le plancher/plafond                                        |      5      |
-|      FS1      | Pouvoir simulé le prix avec **plusieurs** politiques        | Résultats correct et toujours dans un temps modéré + détail des prix                 |      5      |
-|      FS2      | Nouvelle page                                               | Page fonctionnelle pour le simulateur                                                |      3      |
-|      FS3      | Notifier les différente réductions/augmentations            | Prendre en compte le volet multi-site ainsi que les réductions sur la cyber-sécurité |      2      |
-|      FS4      | Notifier quand on atteint le plancher/plafond               | Notification que c'est un prix plafond/plancher                                      |      1      |
+| Type Fonction | Fonction                                                  | Critères d'appréciation                         | Coefficient |
+| :-----------: | --------------------------------------------------------- | ----------------------------------------------- | :---------: |
+|      FP       | Calculer le prix final en fonction des adhésions simulées | Renvoie le prix correct en un temps raisonnable |      5      |
+|      FC1      | Intégré sur le site interne                               | Lien facilement trouvable sur le site           |      5      |
+|      FC2      | Utilisé l'API **Numérobis** déjà existante                | La/les nouvelles routes ne cassent pas l'API    |      5      |
+|      FC3      | Formulaire intuitif et facilement completable             | Formulaire d'une taille raisonnable             |      3      |
+|      FC4      | Pouvoir facilement supprimer une formule de la simulation | Facilement supprimable sans supprimé les autres |      3      |
+|      FC5      | Faire attention aux prix planchers/plafonds               | Aucun résultat de dépasse le plancher/plafond   |      5      |
 
 ### Solutions proposées
 
@@ -50,15 +46,48 @@ Il faudra certainement ajouté une route POST dans l'api qui attendrai dans le b
 
 ```json
 {
-  "parameters": {
-    "population": 853,
-    "roads": 12.45,
-    "etp": 0,
-    "mailBox": 0,
-    "domainName": 0,
-    "hostingSite": 0
+  "adhesion": {
+    "structures": {
+      "name": "test",
+      "typesOfStructure": "/api/types_of_structure/4",
+      "adhesionVariables": [
+        {
+          "value": 10,
+          "years": "/api/years/2025",
+          "priceUnit": "/api/price_units/2"
+        },
+        {
+          "value": 10,
+          "years": "/api/years/2022",
+          "priceUnit": "/api/price_units/2"
+        },
+        {
+          "value": 1500,
+          "years": "/api/years/2024",
+          "priceUnit": "/api/price_units/1"
+        },
+        {
+          "value": 7,
+          "years": "/api/years/2025",
+          "priceUnit": "/api/price_units/6"
+        },
+        {
+          "value": 2,
+          "years": "/api/years/2025",
+          "priceUnit": "/api/price_units/10"
+        },
+        {
+          "value": 2,
+          "years": "/api/years/2025",
+          "priceUnit": "/api/price_units/11"
+        }
+      ]
+    },
+    "formules": ["/api/formules/1"]
   },
-  "formules": ["uri formule1", "uri formule2"]
+
+  "years": 2025,
+  "adheringRgpd": true
 }
 ```
 
