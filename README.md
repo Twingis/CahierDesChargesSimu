@@ -2,7 +2,7 @@
 
 ## Problème actuel
 
-Il est difficile, voire même impossible, actuellement de simuler certaines adhésions pour des structures déjà adhérentes, de plus il est impossible de simuler le prix d'une nouvelle adhésion pour une structure pas encore adhérente, c'est à dire une structure pas enregistrée en base de données.
+Il est difficile, voire même impossible, actuellement de simuler certaines adhésions pour des structures déjà adhérentes. De plus, il est impossible de simuler le prix d'une nouvelle adhésion pour une structure pas encore adhérente, c'est-à-dire une structure non enregistrée en base de données.
 
 ### Projet
 
@@ -18,31 +18,37 @@ Ce simulateur devra s'intégrer à l'application déjà existante : **Numérobis
 | :-----------: | --------------------------------------------------------- | ----------------------------------------------- | :---------: |
 |      FP       | Calculer le prix final en fonction des adhésions simulées | Renvoie le prix correct en un temps raisonnable |      5      |
 |      FC1      | Intégré sur le site interne                               | Lien facilement trouvable sur le site           |      5      |
-|      FC2      | Utilisé l'API **Numérobis** déjà existante                | La/les nouvelles routes ne cassent pas l'API    |      5      |
-|      FC3      | Formulaire intuitif et facilement completable             | Formulaire d'une taille raisonnable             |      3      |
+|      FC2      | Utiliser l'API **Numérobis** déjà existante               | La/les nouvelles routes ne cassent pas l'API    |      5      |
+|      FC3      | Formulaire contenant tous les types de variables          | Formulaire d'une taille raisonnable             |      3      |
 |      FC4      | Pouvoir facilement supprimer une formule de la simulation | Facilement supprimable sans supprimé les autres |      3      |
 |      FC5      | Faire attention aux prix planchers/plafonds               | Aucun résultat de dépasse le plancher/plafond   |      5      |
+|      FS1      | Pouvoir additionner plusieurs adhésions                   | Résultat correct                                |      4      |
+|      FS2      | Utilisable sur téléphone                                  | Page facilement utilisable sur format portarit  |      4      |
 
 ### Solutions proposées
 
 #### Nouvelle Page
 
-Je souhaite faire une page entière dédiée au simulateur, page contentant le formulaire ainsi que le choix de politique à simuler, et aussi le résultat et tout autre notification sur le calcul comme le plafond/plancher et augmentation/réduction
+Je souhaite faire une page entière dédiée au simulateur, page contentant le formulaire ainsi que le choix de politique à simuler, et aussi le résultat et toute autre notification sur le calcul comme le plafond/plancher et augmentation/réduction
 
 ##### Wireframe
 
-![Wireframe](images/1.png)
-![WireframeModale](images/2.png)
+![Wireframe](images/1.png)  
+Figure 1 : Page du simulateur  
+![WireframeModale](images/2.png)  
+Figure 2 : Modale pour l'ajout d'une politique (cette modale apparaîtra lors d'un clic sur le bouton "+")
 
 ##### Intégration dans le site
 
-Cette page devrait être accessible depuis la barre de navigation a gauche afin qu'elle soit accessible de puis n'importe où (et peut être aussi depuis la déjà présente simulation pour une structures déjà présente ?)
+Cette page devrait être accessible depuis la barre de navigation à gauche afin qu'elle soit accessible depuis n'importe où (et peut-être aussi depuis la déjà présente simulation pour une structure déjà présente?)
 
 #### Back-End
 
-Il faudra certainement ajouté une route POST dans l'api qui attendrai dans le body une structure ainsi que les politiques (ou en tout cas des infos pour créer une structure factice dans le back-end) et donc renvoyé le prix que coûterait toutes ces adhésions mais aussi le prix unitaire de chaque politique.
+Il faudra certainement ajouter une route POST dans l'API qui attendrait dans le body une structure ainsi que les politiques (ou en tout cas des infos pour créer une structure factice dans le back-end) et donc renvoyer le prix que coûterait toutes ces adhésions mais aussi le prix unitaire de chaque politique.
 
 ##### Formatage des données
+
+Exemple :
 
 ```json
 {
@@ -95,7 +101,6 @@ Retour :
 
 ```json
 {
-  "simulatedPrice": 0.0,
-  "formulesPrices": [0, 0, 0]
+  "total": 1590.0
 }
 ```
