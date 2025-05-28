@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[utf8]{inputenc}      
+\usepackage[T1]{fontenc}        
+\usepackage[french]{babel}       
+\usepackage{graphicx}           
+\usepackage{hyperref}            
+\usepackage{amsmath, amssymb}   
+\usepackage{geometry}            
+\usepackage{fancyhdr}            
+
+\geometry{
+  a4paper,
+  top=3cm,
+  bottom=3cm,
+  left=4cm,
+  right=4cm
+}
+\setlength{\headheight}{40pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{
+    \small
+    \textbf{Loris DROUHOT} \\
+    BUT Informatique
+    
+}
+\fancyfoot[C]{\thepage}
+
+\title{Rapport de Stage}
+\author{Loris DROUHOT}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+\thispagestyle{empty}
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+
+Je souhaite remercier M. François LALAY, développeur web full-stack, qui fût maître de stage pendant ces 10 semaines, pour sa patience, sa confiance mais surtout sa pédagogie. Apprendre à ses côtés fut un réel plaisir. Il a su me guider afin de progresser sans pour autant tout m'expliquer à chaque fois, ce qui m’a forcé à rechercher par moi-même afin d’obtenir des réponses à mes questions techniques.
+
+\vspace{1em}
+
+Je tiens aussi à remercier M. Ronan MÉVELLEC, Directeur, qui a pris le temps, une après-midi, dans son programme chargé, de me rencontrer afin que l’on puisse échanger sur ma situation, le stage, ainsi que de m’expliquer précisément ce qu’était l’ATD 16.
+
+\vspace{1em}
+
+Je remercie aussi l’ensemble de l’équipe de l’ATD 16 qui m’a très bien accueilli, pris le temps de m’écouter lors de réunions, mais aussi de m’expliquer leur travail, ce qui fut très enrichissant. Plus précisément : Lionel CLERCQ, Responsable du pôle numérique, Charlotte CIARDULLI et Perrine MADIOT, toutes deux chargées du support administration numérique et logiciels métiers, ainsi que Pierre SAUZE, expert en numérique, pour leur temps et leurs conseils lors des réunions hebdomadaires du projet de développement.
+
+\vspace{1em}
+
+Enfin, je remercie aussi mon professeur référent, M. Sébastien FAUCOU.
+
+\newpage
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\thispagestyle{empty}
+
+Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage j’ai mis en pratique ainsi que développer mes connaissances et compétences en développement web. J’ai donc développé une nouvelle page au site interne de l’agence, page de simulation permettant à un agent de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite adhérer en rentrant les variables nécessaire (nombre d’habitants, voirie, etc.)
+
+\vspace{1em}
+
+To complete my second year at the l’Institut Universitaire Technologique de Nantes, I had to validate a 10 week internship at ATD16. During this internship, I used and developed my knowledge and skills in web development. I created a new page on the intern website of the agency. This is a simulating page that allows an agent to calculate a price that a possible member could pay for the services this possible member would like to have by entering the necessary variables (number of habitants, total roads kilometer, etc.)
+
+
+\tableofcontents               
+
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}            
+\begin{center}             
+Tous les mots suivis d'un astérisque sont définis dans le glossaire
+\end{center}
+\vspace*{\fill}            
+
+
+\chapter{Introduction}         
+Étudiant en deuxième année de BUT Informatique, je dois réaliser un stage en entreprise d'une durée de 10 semaines afin de valider mon année. Ce stage se déroule donc entre le 22 avril 2025 et le 27 juin 2025, le but de ce stage est de mettre en pratique les compétences acquises dans notre cursus, ainsi que nous faire découvrir le monde professionnel en informatique.
+
+\vspace{1em}
+
+J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départementale de la Charente (ATD 16), j'ai donc été intégré à son pôle numérique en compagnie de François LALAY, mon maître de stage, unique développeur du site de l'agence, étant donné des problèmes avec le GitLab de l'agence la semaine de mon arrivé, on m'a proposé de réaliser un mini-projet avec les technologies utilisées dans le site de l'agence afin de me familiariser avec, ces technologies sont le framework javascript Next.js pour le front-end, et le framework php Symfony ainsi que Api-Platform pour le back-end, une fois les problèmes résolus j'ai pu commencé ma première mission, qui était le développement d'une page de simulateur sur le site interne à l'agence, et donc développé aussi bien la partie front-end que back-end
+
+\vspace{1em}
+
+Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible on m'a demandé de réaliser moi-même un cahier des charges et des wireframe*. Lors des réunions hebdomadaires avec certains agents du pôle numérique j'ai présenté ce cahier des charges, on m'a alors précisé l'attendu de la mission. Une fois les bases et besoins établis j'ai pu commencé le développement du simulateur, j'ai naturellement commencé par le back-end, où j'ai du donc dû comprendre le fonctionnement de l'api déjà en place, toutes ses entités et ses différentes fonctionnalités. J'ai, dans le même temps, pris connaissance de la grille tarifaires des adhésions à l'ATD 16, ainsi que toutes ses exceptions qui sont de vrais problèmes à implémenter.
+
+\vspace{1em}
+
+Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents languages de programmation, le concept le plus important quand j'ai travaillé sur la partie back-end de ma mission été la serialization et donc aussi la deserialization, ce sont les processus centraux du fonctionnement d'une api rest. Ce sont eux qui assurent que les données soient convertis au bon format pour l'envoie puis convertissent les données reçus au format du language utilisé, ces concepts sont intégrés à Symfony et Api-Platform nativement il suffit de bien les utilisé. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisé comme le type de route API, les différents évènements attachés à ces routes. Pour la partie front-end, la théorie est moins présente car les données et le site sont spécifiques, j'ai donc été amenés à utilisé des outils spécifiques aux framework avec lesquels on travail, comme les hooks React ou les stores Zustand
+
+\vspace{1em}
+
+Pour trouver les solutions à la plupart de mes problèmes un type d'outil fut primordial, les documentations, quand elle sont bien renseigné, les documentations ont souvent la réponse à tous nos problèmes généraux pour un language ou un framework, lorsque j'avais des problèmes plus précis alors les forums ou les IA sont aussi des outils intéressants même s'ils ont des limites naturelles posés par le fait qu'ils ne connaissent pas notre projet, il s'agit alors de trouver un cas général donnant une idée de la solution à notre problème
+
+\vspace{1em}
+
+Dans un premier temps, je présenterai l'agence, son statut spécifique, son fonctionnement, ainsi que son intérêt pour les services publiques charentais.
+
+
+Dans une seconde partie, je détaillerai tout le travail de préparation, de recherche, de développement, de discussion et de réalisation qui m'a permis de terminer ma mission en répondant aux attentes
+
+\chapter{L'Agence Technique Départementale de la Charente}
+\section{Présentation Globale}
+
+L'Agence Technique Départementale de la Charente est un service publique. Fondé en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente.
+
+
+M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tous genres de tâches, qu'elle soit numérique, juridique, ou cartographique. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service publique, auquel les collectivité peuvent demander de l'aide, à condition d'adhérer aux politique adéquats.
+
+\section{Fonctionnement économique}
+
+L'ATD 16 fonctionne sur un modèle de Volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profile acheteur sur les marché publiques. Une fois adhérant à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logicielle de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peux cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien aux nombre d'habitants aussi pour la part variable du volet numérique ou le volet AMO par exemple, il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes.
+
+Enfin l'ATD propose aussi des appuis ponctuels, services rendu irrégulièrement sur demande d'une collectivité, il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel , ou encore d'adressage pour les communes, comme il y en a eu besoin à l'arrivée de la fibre. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communauté de communes, des syndicats ou encore le département lui-même.
+
+Étant un service publique, l'argent injecté et récolté est surveillé de prêt, c'est pourquoi il y'a un Conseil d'Administration, présidé par M. Michel Carteret, ce conseil prend les décisions pour l'ATD, qu'elles soient budgétaires, salariale ou toute autre chose. Ce conseil est peuplé de représentants des adhérents à l'ATD 16. Monsieur le directeur ne peut qu'appliquer les décisions du conseil, néanmoins la plupart des idées sont suggérées par l'ATD puis valider par le conseil.
+
+\section{Environnement de Travail}
+
+En ce qui est de l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travail sur un HP ProBook 450 G7, 8 go de ram sont peu afin de faire tourner le serveur du site web et de l'api pour le développement mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisis Visual Studio Code, François LALAY l'utilise aussi et c'est adapté au pc pas très performant que j'avais, quelques extensions comme le visualizer de base de données sont nécessaire afin de limiter le nombre d'outils. Pour le back-end, comme expliqué dans l'introduction c'est le framework Symfony qui est utilisé avec Api-Platform et donc le language PHP, afin de tester les routes API j'ai utilisé Postman, logiciel permettant, entre-autres, de faire des requêtes API. Maria-Db est utilisé pour avoir une copie de la base de données de production en locale. Pour le front-end, comme précédemment dans l'introduction, c'est Next.js qui est utilisé en framework javascript, il possède des outils très puissant comme la génération de pages statiques, c'est-à-dire que les pages qui ne changent pas, comme une page avec toujours le même appel API, va être créer statiquement en html à la création de la version de production du site, ou bien encore d'autres fonctionnalités, Tailwind CSS est utilisé pour le styling des pages.
+
+\end{document}
