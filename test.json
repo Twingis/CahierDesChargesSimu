@@ -1,0 +1,28 @@
+{
+  "adhesion": {
+    "structures": {
+      "typesOfStructure": "/api/types_of_structure/4",
+      "adhesionVariables": [
+        {
+          "value": 10,
+          "years": "/api/years/2024",
+          "priceUnit": "/api/price_units/2"
+        },
+        {
+          "value": 1500,
+          "years": "/api/years/2024",
+          "priceUnit": "/api/price_units/1"
+        },
+        {
+          "value": 7,
+          "years": "/api/years/2025",
+          "priceUnit": "/api/price_units/6"
+        }
+      ]
+    },
+    "formules": ["/api/formules/1"]
+  },
+
+  "years": 2025,
+  "adheringRgpd": true
+}

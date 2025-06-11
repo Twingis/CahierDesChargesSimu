@@ -40,7 +40,7 @@
 \chapter*{Remerciements}
 \addcontentsline{toc}{chapter}{Remerciements}
 
-Je souhaite remercier M. François LALAY, développeur web full-stack, qui fût maître de stage pendant ces 10 semaines, pour sa patience, sa confiance mais surtout sa pédagogie. Apprendre à ses côtés fut un réel plaisir. Il a su me guider afin de progresser sans pour autant tout m'expliquer à chaque fois, ce qui m’a forcé à rechercher par moi-même afin d’obtenir des réponses à mes questions techniques.
+Je souhaite remercier M. François LALAY, développeur web full-stack, qui fut maître de stage pendant ces 10 semaines, pour sa patience, sa confiance mais surtout sa pédagogie. Apprendre à ses côtés fut un réel plaisir. Il a su me guider afin de progresser sans pour autant tout m'expliquer à chaque fois, ce qui m’a forcé à rechercher par moi-même afin d’obtenir des réponses à mes questions techniques.
 
 \vspace{1em}
 
@@ -59,7 +59,7 @@ Enfin, je remercie aussi mon professeur référent, M. Sébastien FAUCOU.
 \addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{empty}
 
-Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage j’ai mis en pratique ainsi que développer mes connaissances et compétences en développement web. J’ai donc développé une nouvelle page au site interne de l’agence, page de simulation permettant à un agent de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite adhérer en rentrant les variables nécessaire (nombre d’habitants, voirie, etc.)
+Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage, j’ai mis en pratique ainsi que développé mes connaissances et compétences en développement web. J’ai donc développé une nouvelle page au site interne de l’agence, page de simulation permettant à un agent de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite adhérer en rentrant les variables nécessaires (nombre d’habitants, voirie, etc.)
 
 \vspace{1em}
 
@@ -82,50 +82,128 @@ Tous les mots suivis d'un astérisque sont définis dans le glossaire
 
 \vspace{1em}
 
-J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départementale de la Charente (ATD 16), j'ai donc été intégré à son pôle numérique en compagnie de François LALAY, mon maître de stage, unique développeur du site de l'agence, étant donné des problèmes avec le GitLab de l'agence la semaine de mon arrivé, on m'a proposé de réaliser un mini-projet avec les technologies utilisées dans le site de l'agence afin de me familiariser avec, ces technologies sont le framework javascript Next.js pour le front-end, et le framework php Symfony ainsi que Api-Platform pour le back-end, une fois les problèmes résolus j'ai pu commencé ma première mission, qui était le développement d'une page de simulateur sur le site interne à l'agence, et donc développé aussi bien la partie front-end que back-end
+J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départementale de la Charente (ATD 16), j'ai donc été intégré à son pôle numérique en compagnie de François LALAY, mon maître de stage, unique développeur du site de l'agence. Étant donné des problèmes avec le GitLab de l'agence la semaine de mon arrivée, on m'a proposé de réaliser un mini-projet avec les technologies utilisées dans le site de l'agence, afin de me familiariser avec ces technologies, sont le framework JavaScript Next.js pour le front-end, et le framework PHP Symfony ainsi que Api-Platform pour le back-end. Une fois les problèmes résolus, j'ai pu commencer ma première mission, qui était le développement d'une page de simulateur sur le site interne à l'agence, et donc développer aussi bien la partie front-end que back-end
 
 \vspace{1em}
 
-Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible on m'a demandé de réaliser moi-même un cahier des charges et des wireframe*. Lors des réunions hebdomadaires avec certains agents du pôle numérique j'ai présenté ce cahier des charges, on m'a alors précisé l'attendu de la mission. Une fois les bases et besoins établis j'ai pu commencé le développement du simulateur, j'ai naturellement commencé par le back-end, où j'ai du donc dû comprendre le fonctionnement de l'api déjà en place, toutes ses entités et ses différentes fonctionnalités. J'ai, dans le même temps, pris connaissance de la grille tarifaires des adhésions à l'ATD 16, ainsi que toutes ses exceptions qui sont de vrais problèmes à implémenter.
+Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible, on m'a demandé de réaliser moi-même un cahier des charges et des wireframe*. Lors des réunions hebdomadaires avec certains agents du pôle numérique, j'ai présenté ce cahier des charges, on m'a alors précisé l'attendue de la mission. Une fois les bases et besoins établis, j'ai pu commencer le développement du simulateur. J'ai naturellement commencé par le back-end, où j'ai donc dû comprendre le fonctionnement de l'API déjà en place, toutes ses entités et ses différentes fonctionnalités. J'ai, dans le même temps, pris connaissance de la grille tarifaire des adhésions à l'ATD 16, ainsi que toutes ses exceptions qui sont de vrais problèmes à implémenter.
 
 \vspace{1em}
 
-Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents languages de programmation, le concept le plus important quand j'ai travaillé sur la partie back-end de ma mission été la serialization et donc aussi la deserialization, ce sont les processus centraux du fonctionnement d'une api rest. Ce sont eux qui assurent que les données soient convertis au bon format pour l'envoie puis convertissent les données reçus au format du language utilisé, ces concepts sont intégrés à Symfony et Api-Platform nativement il suffit de bien les utilisé. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisé comme le type de route API, les différents évènements attachés à ces routes. Pour la partie front-end, la théorie est moins présente car les données et le site sont spécifiques, j'ai donc été amenés à utilisé des outils spécifiques aux framework avec lesquels on travail, comme les hooks React ou les stores Zustand
+Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents langages de programmation. Le concept le plus important quand j'ai travaillé sur la partie back-end de ma mission a été la serialization et donc aussi la deserialization, ce sont les processus centraux du fonctionnement d'une API rest. Ce sont eux qui assurent que les données soient converties au bon format pour l'envoi, puis convertissent les données reçues au format du langage utilisé. Ces concepts sont intégrés à Symfony et Api-Platform nativement, il suffit de bien les utiliser. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisés, comme le type de route API, les différents événements attachés à ces routes. Pour la partie front-end, la théorie est moins présente car les données et le site sont spécifiques, j'ai donc été amené à utiliser des outils spécifiques aux frameworks avec lesquels on travaille, comme les hooks React ou les stores Zustand.
 
 \vspace{1em}
 
-Pour trouver les solutions à la plupart de mes problèmes un type d'outil fut primordial, les documentations, quand elle sont bien renseigné, les documentations ont souvent la réponse à tous nos problèmes généraux pour un language ou un framework, lorsque j'avais des problèmes plus précis alors les forums ou les IA sont aussi des outils intéressants même s'ils ont des limites naturelles posés par le fait qu'ils ne connaissent pas notre projet, il s'agit alors de trouver un cas général donnant une idée de la solution à notre problème
+Pour trouver les solutions à la plupart de mes problèmes, un type d'outil fut primordial : les documentations. Quand elles sont bien renseignées, les documentations ont souvent la réponse à tous nos problèmes généraux pour un langage ou un framework. Lorsque j'avais des problèmes plus précis, alors les forums ou les IA sont aussi des outils intéressants, même s'ils ont des limites naturelles posées par le fait qu'ils ne connaissent pas notre projet, il s'agit alors de trouver un cas général donnant une idée de la solution à notre problème.
 
 \vspace{1em}
 
-Dans un premier temps, je présenterai l'agence, son statut spécifique, son fonctionnement, ainsi que son intérêt pour les services publiques charentais.
+Dans un premier temps, je présenterai l'agence, son statut spécifique, son fonctionnement, ainsi que son intérêt pour les services publics charentais.
 
 
-Dans une seconde partie, je détaillerai tout le travail de préparation, de recherche, de développement, de discussion et de réalisation qui m'a permis de terminer ma mission en répondant aux attentes
+Dans une seconde partie, je parlerai des outils qui m'ont été utiles ainsi que la réalisation de ma mission de développement
 
-\chapter{L'Agence Technique Départementale de la Charente}
-\section{Présentation Globale}
+\chapter{Développement}
 
-L'Agence Technique Départementale de la Charente est un service publique. Fondé en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente.
+\section{L'Agence Technique Départementale de la Charente}
+L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente.
 
 
-M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tous genres de tâches, qu'elle soit numérique, juridique, ou cartographique. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service publique, auquel les collectivité peuvent demander de l'aide, à condition d'adhérer aux politique adéquats.
+M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tous genres de tâches, qu'elles soient numériques, juridiques ou cartographiques. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service public, auquel les collectivités peuvent demander de l'aide, à condition d'adhérer aux politiques adéquates.
 
-\section{Fonctionnement économique}
+\subsection{Fonctionnement économique}
 
-L'ATD 16 fonctionne sur un modèle de Volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profile acheteur sur les marché publiques. Une fois adhérant à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logicielle de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peux cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien aux nombre d'habitants aussi pour la part variable du volet numérique ou le volet AMO par exemple, il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes.
+L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien au nombre d'habitants, aussi pour la part variable du volet numérique ou le volet AMO par exemple. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes.
 
-Enfin l'ATD propose aussi des appuis ponctuels, services rendu irrégulièrement sur demande d'une collectivité, il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel , ou encore d'adressage pour les communes. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communauté de communes, des syndicats ou encore le département lui-même.
+Enfin, l'ATD propose aussi des appuis ponctuels, services rendus irrégulièrement sur demande d'une collectivité ; il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel, ou encore d'adressage pour les communes. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communautés de communes, des syndicats ou encore le département lui-même.
 
 Étant un service publique, l'argent injecté et récolté est surveillé de près, c'est pourquoi il y'a un Conseil d'Administration, présidé par M. Michel Carteret, ce conseil prend les décisions pour l'ATD, qu'elles soient budgétaires, salariale ou toute autre chose. Ce conseil est peuplé de représentants des adhérents à l'ATD 16. Monsieur le directeur ne peut qu'appliquer les décisions du conseil, néanmoins la plupart des idées sont suggérées par l'ATD puis valider par le conseil.
 
-\section{Environnement de Travail}
+\subsection{Environnement de Travail}
 
-En ce qui est de l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travail sur un HP ProBook 450 G7, les 8 go de ram sont peu afin de faire tourner le serveur du site web et de l'api pour le développement mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisis Visual Studio Code, c'est adapté au pc pas très performant que j'avais, quelques extensions comme le visualizer de base de données sont nécessaire afin de limiter le nombre d'outils. Pour le back-end, comme expliqué dans l'introduction c'est le framework Symfony qui est utilisé avec Api-Platform et donc le language PHP, afin de tester les routes API j'ai utilisé Postman, logiciel permettant, entre-autres, de faire des requêtes API. Maria-Db est utilisé pour avoir une copie de la base de données de production en locale. Pour le front-end, comme précédemment dans l'introduction, c'est Next.js qui est utilisé en framework javascript, c'est le framework le plus populaire dans le web de nos jours, Tailwind CSS est utilisé pour le style des pages.
+En ce qui est de l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travaille sur un HP ProBook 450 G7, les 8 Go de RAM sont peu afin de faire tourner le serveur du site web et de l'API pour le développement, mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisi Visual Studio Code, c'est adapté au PC pas très performant que j'avais, quelques extensions comme le visualiseur de base de données sont nécessaires afin de limiter le nombre d'outils. Pour le back-end, comme expliqué dans l'introduction, c'est le framework Symfony qui est utilisé avec Api-Platform et donc le langage PHP. Afin de tester les routes API, j'ai utilisé Postman, logiciel permettant, entre autres, de faire des requêtes API. Maria-Db est utilisé pour avoir une copie de la base de données de production en local. Pour le front-end, comme précédemment dans l'introduction, c'est Next.js qui est utilisé en framework JavaScript. C'est le framework le plus populaire sur le web de nos jours. Tailwind CSS est utilisé pour le style des pages.
 
-\chapter{Réalisation des missions}
-\section{Mission d'introduction}
 
-Afin de me familiariser avec les technologies utilisés et aussi à cause de problèmes avec le GitLab de l'agence, M. François LALAY m'a proposé de réaliser un petit projet de développement front-end. Et donc, en utilisant l'\href{https://api.gwent.one/}{API Gwent one}, j'ai réalisé une petite application permettant de rechercher parmi une liste de cartes. Ce projet m'a permis de me familiariser avec Next.js et Tailwind CSS, ainsi que de commencer à utiliser mes compétences en React. Grâce à ce projet, j'ai facilement intégré le fonctionnement de base de Next.js, François LALAY m'a aussi expliqué le fonctionnement du build de Next.js. Lors du build Next.js regarde chaque page est en déduit un type parmi deux, les pages dynamiques, c'est-à-dire les pages avec un identifiant différent (exemple : produit/1 et produit/2), c'est en fait la même page mais avec des informations différentes, mais aussi les pages avec des appels api conditionnel et variants contextuellement (exemple :)
+\section{Explication de la mission}
+
+La mission principale de mon stage est donc la réalisation d'un simulateur de prix d'adhésions sur le site Numérobis, site interne à l'ATD 16. Ce simulateur, doit pouvoir donner un prix pour une structure adhérente, en tenant compte des variables renseignées. Une simulation existait déjà, mais elle se limitait à une seule nouvelle adhésion et ne prenait en compte que les variables déjà rentré. Cette nouvelle version doit dépasser ces limites, il faut pouvoir calculer une ou plusieurs nouvelles adhésion pour une structure déjà adhérente mais aussi pouvoir simulé de zéro une adhésion d'une nouvelle structure. Une contrainte exprimé dès le début du stage est aussi primordiale, ce simulateur doit pouvoir être facilement utilisable sur mobile.
+
+En résumé, il faut une page permettant de :
+\begin{enumerate}
+    \item Simuler une nouvelle adhésion en partant de zéro
+    \item Simuler une nouvelle adhésion en utilisant une structure déjà existante
+    \item Être utilisable sur téléphone
+\end{enumerate}
+
+\section{Les outils}
+Au cours du sage, j'ai utilisé et découvert de nombreux outils, que je connaissait et utilisait déjà comme Git et GitLab, ou de nouveaux comme Jira pour faire de la gestion de projet. Cependant les outils que j'ai le plus utilisé de loin, ce sont les documentations des languages et technologies utilisés. 
+
+\subsection{Git}
+Git est certainement le software le plus important dans le monde de l'informatique avec Linux. C'est un gestionnaire de versions, c'est-à-dire qu'il permet de stocker un ensemble de fichiers, d'y apporter des modifications et de conserver ainsi l'historique de ces. Ici, je n'ai pas découvert Git, mais son utilisation dans le monde professionnel, la logique de "production" et de "développement" et donc le fonctionnement des branches. Avant ce stage, mon utilisation de Git était assez rudimentaire, je me contentais de la simple branche "main", puis ajouter mes modifications une fois que cela fonctionnait en local. Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Afin de développer, je crée une nouvelle branche à partir de develop, puis ajoute mes modifications au fur et à mesure, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement.
+
+\subsection{Gestion de Projet}
+Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je travaillais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges, qui devait présenter ma vision du projet, que j'ai présenté lors de ma première réunion hebdomadaire. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec quelques personnes du pôle numérique, où François LALAY présente ses avancées sur le projet Numérobis. J'ai donc aussi pris part à ces réunions sur ma période de présence, où je présentais donc les évolutions du simulateur. Lors de ces réunions, chacun peut donner ses impressions et proposer des changements ou ajouts, et donc afin de ne pas me perdre dans les demandes, j'ai utilisé Jira et son tableau Kanban*, ici je place dans la colonne "TO DO" les tâches à développer, "IN PROGRESS" la tâche en cours et dans "DONE" les tâches terminées.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{kanban.png}
+    \caption{Tableau Kanban de Jira}
+    \label{fig:kanban-jira}
+\end{figure}
+
+\subsection{Les documentations et l'IA}
+Certainement le type d'outils que j'ai le plus utilisé, je les ai bien longtemps ignorés au profit d'outils plus "performants", notamment l'IA, mais lors de mon stage je me suis rendu compte de leur intérêt. Documentation d'API-Platform, Tailwind CSS, MDN, autant de documentation que de langages et technologies utilisés, une fois que j'ai compris comment les utiliser, elles se sont avérées être des outils très puissants. J'ai eu, cependant, quelques soucis avec la documentation Symfony, dont je trouve que la recherche n'est pas très précise, et qui manque parfois d'explications et d'exemples. Ces différentes documentations sont à la base de mon projet, ont répondu à nombre de mes questionnements et recherches.
+
+Un autre outil m'a aussi parfois aidé, Chat GPT, que j'ai beaucoup utilisé pendant le BUT, j'ai donc voulu faire l'effort de moins l'utiliser pendant le stage, ce que j'ai réussi. De plus, il a montré très vite ses limites, car s'il est effectivement très performant pour aider dans des petits projets universitaires, ici la masse conséquente de contexte le limite dans l'exactitude de ses réponses. Je l'ai donc utilisé dans deux types de cas, le premier, quand je ne savais absolument pas comment faire quelque chose, même pas l'idée de comment le faire, j'ai alors utilisé l'IA afin d'avoir un exemple pour commencer, le deuxième, quand j'avais besoin d'explications dont je ne trouvais pas la réponse dans la documentation.
+
+\section{Le simulateur}
+Le développement du simulateur s'est naturellement divisé en deux partie majeures, le front-end et le back-end. Pour la partie back-end, on m'a expliqué que le simulateur ne devait en aucun cas écrire en base de données, il devait se contenter de renvoyé le résultat. Il fallait aussi réutiliser les calculs déjà présent dans l'API, ce qui nécessite de comprendre ce dont ces calculs ont besoins comme paramètre. Pour le Front-end, pendant les réunions hebdomadaires, on a décidé que le simulateur serait une page à part entière du site, et que certaines informations étaient nécessaires sur la page comme les champs pour renseigner les variables ainsi qu les informations sur les différentes politiques ajoutés.
+
+\subsection{L'API Numérobis}
+Le back-end du site est une API Rest, développé avec Symfony et API Platform, afin de développer le simulateur j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API Platform. Cette période de compréhension du projet a été grandement accélérer par le fait qu'au 3eme semestre j'avais réalisé un site en utilisant Symfony pour la SAE, j'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les controllers et Doctrine* mais aussi plus globalement du language PHP en lui-même.
+
+Cependant il fallait que je comprenne le fonctionnement d'API Platform, c'est un framework PHP basé sur Symfony, le site développé au 3eme semestre n'utilisé pas d'API, tout était fait dans le même projet, back et front. API Platform permet de créer des API REST avec Symfony, en créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des évènements à ces routes comme "validate", ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il colle aux contraintes de la base de données. De plus API Platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouvé des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{hydraJSON.png}
+    \caption{Exemple de hydra JSON}
+    \label{fig:hyda-json}
+\end{figure}
+
+\subsection{Le controller simulateur}
+Afin de réaliser le back-end du simulateur je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créer des groupes de denormalization, c'est en fait une annotation qui permet de dire à l'API les données attendu pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une Structure, une Adhésion et une Année, il faut donc que le json envoyé dans le body de la requête contienne les élément nécessaire à la création de ces trois objets.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{jsonSimu.png}
+    \caption{Exemple de json pour le simulateur}
+    \label{fig:json-simu}
+\end{figure}
+
+On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créer à la denormalization quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de denormalization, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de serialization et deserialization.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{SerializerWorkflow.png}
+    \caption{La serialization}
+    \label{fig:serialization}
+\end{figure}
+
+Ensuite, il y'a deux exceptions majeures dans le calcul, la première n'est pas vraiment une exception mais une contrainte, la politique de maintenance de parc informatique multi-site est une augmentation de 25\%, il faut donc en plus de la formule multi-site, les formules du volet numérique, puis calculer leur prix, puis recalculer avec le multi-site afin d'obtenir le prix d'augmentation causé par le multi-site. La deuxième arrive dans le cadre de la politique "Parcours cybersécurité", si l'adhérent adhère déjà à la politique RGPD alors le prix de la politique est réduit de 30\% supplémentaire, et donc pour gérer cette exception, le json possède un champ "adheringRgpd", qui donne l'information sur si cette structure adhère ou pas au RGPD, si c'est le cas, alors le controller ajoute la formule de RGPD avant le calcul, grâce au repository de Symfony, afin que la formule de calcul le prenne en compte. Afin de toujours avoir l'information sur l'ID des formules problématique, leur ID est stocké dans un fichier .ENV, qui n'est pas sauvegardé sur Git, mais qui évite ces "nombres magiques", il y'a juste à changer l'ID ans le fichier .ENV et tous les endroit où c'est importé récupère alors le nouvel ID.
+
+\subsubsection{Documentation}
+
+\subsubsection{Tests}
+
+\subsection{Le site Numérobis}
+
+\section{Refactoring}
+
+\subsection{séparation de la logique}
+
+\subsection{Zustand}
+
+\section{Conclusion}
 
 \end{document}

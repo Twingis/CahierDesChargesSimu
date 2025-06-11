@@ -2,9 +2,22 @@
 \contentsline {chapter}{Remerciements}{1}{chapter*.1}%
 \contentsline {chapter}{Résumé}{2}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
-\contentsline {chapter}{\numberline {2}L'Agence Technique Départementale de la Charente}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Présentation Globale}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Fonctionnement économique}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Environnement de Travail}{8}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Réalisation des missions}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Mission d'introduction}{9}{section.3.1}%
+\contentsline {chapter}{\numberline {2}Développement}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}L'Agence Technique Départementale de la Charente}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Fonctionnement économique}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Environnement de Travail}{8}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Explication de la mission}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Les outils}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Git}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Gestion de Projet}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Les documentations et l'IA}{10}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Le simulateur}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}L'API Numérobis}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Le controller simulateur}{12}{subsection.2.4.2}%
+\contentsline {subsubsection}{Documentation}{14}{section*.4}%
+\contentsline {subsubsection}{Tests}{14}{section*.5}%
+\contentsline {subsection}{\numberline {2.4.3}Le site Numérobis}{14}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Refactoring}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}séparation de la logique}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Zustand}{14}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Conclusion}{14}{section.2.6}%
