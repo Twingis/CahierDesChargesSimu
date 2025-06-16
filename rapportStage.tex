@@ -4,10 +4,12 @@
 \usepackage[T1]{fontenc}        
 \usepackage[french]{babel}       
 \usepackage{graphicx}           
-\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}            
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage{xurl}            
 \usepackage{amsmath, amssymb}   
 \usepackage{geometry}            
-\usepackage{fancyhdr}            
+\usepackage{fancyhdr}
+\usepackage{float}       
 
 \geometry{
   a4paper,
@@ -106,14 +108,14 @@ Dans une seconde partie, je parlerai des outils qui m'ont été utiles ainsi que
 \chapter{Développement}
 
 \section{L'Agence Technique Départementale de la Charente}
-L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente.
+L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente. Pour l'organigramme structurel voir annexe
 
 
 M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tous genres de tâches, qu'elles soient numériques, juridiques ou cartographiques. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service public, auquel les collectivités peuvent demander de l'aide, à condition d'adhérer aux politiques adéquates.
 
 \subsection{Fonctionnement économique}
 
-L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien au nombre d'habitants, aussi pour la part variable du volet numérique ou le volet AMO par exemple. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes.
+L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien au nombre d'habitants, aussi pour la part variable du volet numérique ou le volet AMO par exemple. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes. Pour les détails de la grille tarifaire voire annexe.
 
 Enfin, l'ATD propose aussi des appuis ponctuels, services rendus irrégulièrement sur demande d'une collectivité ; il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel, ou encore d'adressage pour les communes. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communautés de communes, des syndicats ou encore le département lui-même.
 
@@ -152,36 +154,36 @@ Le développement de ce simulateur étant mon plus gros et surtout long projet �
 \end{figure}
 
 \subsection{Les documentations et l'IA}
-Certainement le type d'outils que j'ai le plus utilisé, je les ai bien longtemps ignorés au profit d'outils plus "performants", notamment l'IA, mais lors de mon stage je me suis rendu compte de leur intérêt. Documentation d'API-Platform, Tailwind CSS, MDN, autant de documentation que de langages et technologies utilisés, une fois que j'ai compris comment les utiliser, elles se sont avérées être des outils très puissants. J'ai eu, cependant, quelques soucis avec la documentation Symfony, dont je trouve que la recherche n'est pas très précise, et qui manque parfois d'explications et d'exemples. Ces différentes documentations sont à la base de mon projet, ont répondu à nombre de mes questionnements et recherches.
+Certainement le type d'outils que j'ai le plus utilisé, je les ai bien longtemps ignorés au profit d'outils plus "performants", notamment l'IA, mais lors de mon stage je me suis rendu compte de leur intérêt. Documentation d'API-Platform, Tailwind CSS, MDN, autant de documentation que de langages et technologies utilisés. Une fois que j'ai compris comment les utiliser, elles se sont avérées être des outils très puissants. J'ai eu, cependant, quelques soucis avec la documentation Symfony, dont je trouve que la recherche n'est pas très précise, et qui manque parfois d'explications et d'exemples. Ces différentes documentations sont à la base de mon projet, ont répondu à nombre de mes questionnements et recherches.
 
 Un autre outil m'a aussi parfois aidé, Chat GPT, que j'ai beaucoup utilisé pendant le BUT, j'ai donc voulu faire l'effort de moins l'utiliser pendant le stage, ce que j'ai réussi. De plus, il a montré très vite ses limites, car s'il est effectivement très performant pour aider dans des petits projets universitaires, ici la masse conséquente de contexte le limite dans l'exactitude de ses réponses. Je l'ai donc utilisé dans deux types de cas, le premier, quand je ne savais absolument pas comment faire quelque chose, même pas l'idée de comment le faire, j'ai alors utilisé l'IA afin d'avoir un exemple pour commencer, le deuxième, quand j'avais besoin d'explications dont je ne trouvais pas la réponse dans la documentation.
 
 \section{Le simulateur}
-Le développement du simulateur s'est naturellement divisé en deux partie majeures, le front-end et le back-end. Pour la partie back-end, on m'a expliqué que le simulateur ne devait en aucun cas écrire en base de données, il devait se contenter de renvoyé le résultat. Il fallait aussi réutiliser les calculs déjà présent dans l'API, ce qui nécessite de comprendre ce dont ces calculs ont besoins comme paramètre. Pour le Front-end, pendant les réunions hebdomadaires, on a décidé que le simulateur serait une page à part entière du site, et que certaines informations étaient nécessaires sur la page comme les champs pour renseigner les variables ainsi qu les informations sur les différentes politiques ajoutés.
+Le développement du simulateur s'est naturellement divisé en deux parties majeures, le front-end et le back-end. Pour la partie back-end, on m'a expliqué que le simulateur ne devait en aucun cas écrire en base de données, il devait se contenter de renvoyer le résultat. Il fallait aussi réutiliser les calculs déjà présents dans l'API, ce qui nécessite de comprendre ce dont ces calculs ont besoin comme paramètres. Pour le Front-end, pendant les réunions hebdomadaires, on a décidé que le simulateur serait une page à part entière du site, et que certaines informations étaient nécessaires sur la page, comme les champs pour renseigner les variables ainsi que les informations sur les différentes politiques ajoutées.
 
 \subsection{L'API Numérobis}
-Le back-end du site est une API Rest, développé avec Symfony et API Platform, afin de développer le simulateur j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API Platform. Cette période de compréhension du projet a été grandement accélérer par le fait qu'au 3eme semestre j'avais réalisé un site en utilisant Symfony pour la SAE, j'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les controllers et Doctrine* mais aussi plus globalement du language PHP en lui-même.
+Le back-end du site est une API Rest, développée avec Symfony et API Platform. Afin de développer le simulateur, j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API Platform. Cette période de compréhension du projet a été grandement accélérée par le fait qu'au 3ème semestre j'avais réalisé un site en utilisant Symfony pour la SAE, j'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les contrôleurs et Doctrine* mais aussi plus globalement du langage PHP en lui-même.
 
-Cependant il fallait que je comprenne le fonctionnement d'API Platform, c'est un framework PHP basé sur Symfony, le site développé au 3eme semestre n'utilisé pas d'API, tout était fait dans le même projet, back et front. API Platform permet de créer des API REST avec Symfony, en créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des évènements à ces routes comme "validate", ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il colle aux contraintes de la base de données. De plus API Platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouvé des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
+Cependant, il fallait que je comprenne le fonctionnement d'API Platform, c'est un framework PHP basé sur Symfony, le site développé au 3ème semestre n'utilisait pas d'API, tout était fait dans le même projet, back et front. API Platform permet de créer des API REST avec Symfony. En créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des événements à ces routes comme "validate", ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il colle aux contraintes de la base de données. De plus, API Platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouver des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{hydraJSON.png}
+    \includegraphics[scale=0.8]{hydraJSON.png}
     \caption{Exemple de hydra JSON}
     \label{fig:hyda-json}
 \end{figure}
 
 \subsection{Le controller simulateur}
-Afin de réaliser le back-end du simulateur je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créer des groupes de denormalization, c'est en fait une annotation qui permet de dire à l'API les données attendu pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une Structure, une Adhésion et une Année, il faut donc que le json envoyé dans le body de la requête contienne les élément nécessaire à la création de ces trois objets.
+Afin de réaliser le back-end du simulateur, je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créé des groupes de dénormalisation, c'est en fait une annotation qui permet de dire à l'API les données attendues pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une structure, une adhésion et une année, il faut donc que le json envoyé dans le body de la requête contienne les éléments nécessaires à la création de ces trois objets.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{jsonSimu.png}
+    \includegraphics[scale=0.6]{jsonSimu.png}
     \caption{Exemple de json pour le simulateur}
     \label{fig:json-simu}
 \end{figure}
 
-On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créer à la denormalization quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de denormalization, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de serialization et deserialization.
+On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créés à la dénormalisation quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de dénormalisation, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony, de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de sérialisation et désexualisation.
 
 \begin{figure}[h]
     \centering
@@ -190,20 +192,139 @@ On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux 
     \label{fig:serialization}
 \end{figure}
 
-Ensuite, il y'a deux exceptions majeures dans le calcul, la première n'est pas vraiment une exception mais une contrainte, la politique de maintenance de parc informatique multi-site est une augmentation de 25\%, il faut donc en plus de la formule multi-site, les formules du volet numérique, puis calculer leur prix, puis recalculer avec le multi-site afin d'obtenir le prix d'augmentation causé par le multi-site. La deuxième arrive dans le cadre de la politique "Parcours cybersécurité", si l'adhérent adhère déjà à la politique RGPD alors le prix de la politique est réduit de 30\% supplémentaire, et donc pour gérer cette exception, le json possède un champ "adheringRgpd", qui donne l'information sur si cette structure adhère ou pas au RGPD, si c'est le cas, alors le controller ajoute la formule de RGPD avant le calcul, grâce au repository de Symfony, afin que la formule de calcul le prenne en compte. Afin de toujours avoir l'information sur l'ID des formules problématique, leur ID est stocké dans un fichier .ENV, qui n'est pas sauvegardé sur Git, mais qui évite ces "nombres magiques", il y'a juste à changer l'ID ans le fichier .ENV et tous les endroit où c'est importé récupère alors le nouvel ID.
+Ensuite, il y a deux exceptions majeures dans le calcul, la première n'est pas vraiment une exception mais une contrainte, la politique de maintenance de parc informatique multi-site est une augmentation de 25\% du prix du volet numérique, il faut donc en plus de la formule multi-site, les formules du volet numérique, puis calculer leur prix, puis recalculer avec le multi-site afin d'obtenir le prix d'augmentation causé par le multi-site. La deuxième arrive dans le cadre de la politique "Parcours cybersécurité", si l'adhérent adhère déjà à la politique RGPD alors le prix de la politique est réduit de 30\% supplémentaire, et donc pour gérer cette exception, le json possède un champ "adheringRgpd", qui donne l'information sur si cette structure adhère ou pas au RGPD, si c'est le cas, alors le controller ajoute la formule de RGPD avant le calcul, grâce au repository de Symfony, afin que la formule de calcul le prenne en compte. Afin de toujours avoir l'information sur l'ID des formules problématiques, leur ID est stocké dans un fichier .ENV, qui n'est pas sauvegardé sur Git, mais qui évite ces "nombres magiques", il y'a juste à changer l'ID dans le fichier .ENV et tous les endroits où c'est importé récupèrent alors le nouvel ID.
 
 \subsubsection{Documentation}
 
+API Platform supporte nativement le format de documentation d'openAPI (anciennement Swagger), et donc cela crée une documentation à l'adresse \href{https://dev.api.numerobis.atd16.fr/api}{adresse-api/api}. Sur cette page, on retrouve donc la documentation de toutes les routes de l'API, avec une documentation par défaut pour les routes standards, cependant ma route n'est pas standard, et donc pour la documenter correctement, j'ai utilisé des DTO (Data Transfer Object). J'ai donc créé deux DTO, un "input" (entrée) et "output" (sortie), grâce au groupe de dénormalisation et au DTO, la documentation décrit parfaitement ce qui est nécessaire dans le body de la requête. Ces DTO décrivent donc ce qui est attendu en entrée et en sortie de la route.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{docSimulatorInput.png}
+    \caption{Documentation de la route API}
+    \label{fig:swagger-simulator-in}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{docSimulatorOutput.png}
+    \caption{Documentation de la route API}
+    \label{fig:swagger-simulator-out}
+\end{figure}
+
 \subsubsection{Tests}
+Ayant écrit du code dans l'API, il faut bien évidemment le tester. J'ai donc créé une batterie de tests assurant une couverture de cas. Ce sont des tests fonctionnels, c'est-à-dire que l'on va tester les réponses de l'API. Dans les tests déjà écrits dans le projet, François LALAY utilise Zenstruck, qui permet de générer facilement des objets aléatoires pour le testing, mais aussi de réinitialiser la base de test entre chaque test, je l'ai donc aussi utilisé. J'ai donc testé mon contrôleur en lançant aussi la totalité des tests afin de vérifier si mes modifications n'ont pas cassé quelque chose autre part dans le code.
 
 \subsection{Le site Numérobis}
+Le site interne de l'ATD 16, Numérobis, est un ERP (Entreprise Resource Planning), le choix du développement d'un site interne a été conditionné par la complexité du système tarifaire de l'ATD.
 
-\section{Refactoring}
+\subsubsection{Fonctionnement de React}
+React fonctionne sur le modèle d'un arbre, chaque composant possède des enfants qui peuvent être d'autres composants React ou bien du JSX (c'est le code qui ressemble à du HTML dans le retour des composants). Dans les composants rendus côté client, on peut utiliser des "hooks" react, ce sont des fonctions qui permettent de stocker des états ou encore d'utiliser le cycle de vie des composants. Par exemple "useState", ce hook permet de garder une valeur entre les différents cycles de vie, et donc chaque fois que cet état est mis à jour, le composant se rend à nouveau, ainsi que tous ses enfants. Afin d'optimiser les performances du site, il faut viser le minimum de rendu possible.
 
-\subsection{séparation de la logique}
+\subsubsection{Le simulateur}
 
-\subsection{Zustand}
+Le simulateur se découpe en cinq zones majeures : un header, la liste des adhésions, le détail de l'adhésion sélectionné, l'importation d'une structure ainsi que les variables d'adhésions.
 
-\section{Conclusion}
+\vspace{1em}
+
+Le header est plutôt simple, il contient le prix total des adhésions, simulé et importé s'il y a, ainsi que le sélecteur de type de structure, sélectionner un type de structure est nécessaire pour le calcul.
+
+\vspace{1em}
+
+La liste des adhésions, c'est l'endroit où on affiche la liste qui contient les données envoyées à l'API. On retrouve dans cette liste toutes les données importantes relatives aux adhésions dans le simulateur : le titre de la politique, le prix simulé, ainsi que les formules. Le nom de chaque politique est cliquable pour afficher le détail des formules et pouvoir décocher ou cocher celles que l'on veut. Sur le côté gauche, on retrouve un groupe de boutons, le premier (ajouter), ouvre une modale qui permet de choisir une politique à ajouter, le deuxième supprime la politique courante et le dernier efface toute la liste. Les composants affichés sont inspirés de composants déjà développés par François LALAY, que j'ai modifiés afin de faire apparaître les informations voulues.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{adhesionList.png}
+    \caption{Liste des adhésions}
+    \label{fig:list-adhe}
+\end{figure}
+\vspace{1em}
+
+Le composant de détail consiste essentiellement en un groupe de checkbox pour choisir les formules. À l'origine, les formules étaient récupérées par un appel API, mais par souci d'optimisation, j'injecte désormais dans le composant les formules à afficher, ce qui réduit le nombre d'appels à l'API. Ce composant apparaît aussi dans une modale quand on sélectionne une nouvelle politique, ce qui permet de faire disparaître l'affichage classique de ce composant pour la vue mobile.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{detailAdhe.png}
+    \caption{Détail adhésion}
+    \label{fig:detail-adhe}
+\end{figure}
+
+Le composant d'import ne comporte visuellement qu'une seule chose, la barre de recherche de structure. Une fois qu'on sélectionne une structure, on récupère les données avec l'API, puis je les traite afin de correspondre au format nécessaire à l'affichage et au calcul de la simulation. Une fois la structure importée, on affiche ses adhésions ainsi que ses variables connues. De la même manière que pour le détail d'adhésion, ce composant disparaît en vue mobile et s'affiche dans une modale quand on clique sur le bouton "importer" (présenté plus tard avec la vue mobile).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{import.png}
+    \caption{L'importation de structures}
+    \label{fig:import-struc}
+\end{figure}
+
+Ce composant est une liste d'"input controllés", un input controllé en React, c'est un input où l'on va stocker sa valeur à chaque modification, pas de bouton de validation, ça permet de tout le temps connaître la valeur de l'input. Ici, c'est une liste d'input contrôle, c'est-à-dire qu'avec un seul "useState" on garde la trace de toutes les variables. La liste de variables est quant à elle récupérée par un appel API au chargement de la page.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{adheVar.png}
+    \caption{Les variables d'adhésion}
+    \label{fig:adhe-var}
+\end{figure}
+
+Comme expliqué précédemment, la vue mobile faisait partie des demandes dès le début du développement. La question de la vue mobile tombe plutôt dans le domaine du CSS que du React, même si quelques changements ont été nécessaires de côté, comme la création des deux modalités de détail et d'import. Après avoir discuté avec mon maître de stage du design mobile, il m'a fait remarquer que dans la plupart des applications, notamment de scroll comme TikTok et Instagram réels, ont les actions placées sur le côté droit et en bas, les zones d'accessibilité du pouce.
+
+Tailwind CSS possède un système très intéressant d'application conditionnelle des classes à certains paliers, par exemple avec le tag "md:" précédent une classe, celle-ci devient effective qu'à partir d'un affichage d'une largeur minimum de 768 pixels. Comme expliqué dans la documentation de Tailwind, ces paliers s'activent quand l'écran est supérieur à la largeur, il faut donc comprendre que l'affichage mobile doit être développé en premier, car on changera le comportement avec les marqueurs pour les écrans plus grands. Cependant, le site Numérobis n'a pas été pensé pour le mobile, et moi-même, m'y étant intéressé qu'une fois le simulateur fonctionnel, j'ai dû réécrire les classes Tailwind avec en configuration par défaut le mobile, et l'affichage bureau derrière des tags "md:". Ici, on a un contenant flex, avec une disposiion en colonne pour la vue mobile (flex-col) puis en ligne si affichage plus large (md:flex-row).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{responsive.png}
+    \caption{Exemple de responsive}
+    \label{fig:responsive}
+\end{figure}
+
+J'ai donc transformé les boutons d'actions à gauche de la liste d'adhésions en une barre d'actions qui reste en bas de l'écran, et ajouté un bouton "importé" qui permet d'afficher une modale avec le composant d'import de structure. J'ai aussi inversé l'affichage des prix et du nom dans la liste des adhésions afin d'avoir la zone cliquable à droite.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{vueMobile.png}
+    \caption{Vue mobile}
+    \label{fig:mobile-view}
+\end{figure}
+
+
+\section{Refactoring avec Zustand}
+Dans la première version du simulateur, j'ai utilisé les contextes de React pour pouvoir transmettre des infos en profondeur dans l'arbre React et aussi pour les modifier. Les contextes permettent d'éviter de faire des cascades de props*.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{props+vs+context.png}
+    \caption{Contextes React}
+    \label{fig:context-react}
+\end{figure}
+
+Ils fonctionnent sur le principe suivant, dans un composant parent, on crée un contexte et un état avec "useState", puis dans le "return" du composant, on crée un "Provider" du contexte avec en valeur juste la valeur de l'état pour de la lecture seule, ou bie un objet avec la valeur de l'état ainsi que la fonction de modification si on souhaite le modifier plus bas dans l'arbre.
+
+Dans le simulateur, j'ai eu besoin de transmettre beaucoup d'informations dans les composants, je me suis donc très vite retrouvé avec beaucoup de contextes et de providers dans la section de ma page. Ce qui rend, d'une, le code très peu lisible, car tous les états sont créés dans ce composant et de deux un souci d'optimisation, comme expliqué précédemment, lorsqu'un état change, le composant se rend à nouveau ainsi que tous ses enfants, combiné ça avec plusieurs contextes qui peuvent être modifiés et on obtient une page qui se rend entièrement à chaque modification.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{providerHell.png}
+    \caption{Le "Provider Hell"}
+    \label{fig:provider-hell}
+\end{figure}
+
+Dans un premier temps, j'avais déplacé la création des états et des contextes dans des composants à part, afin d'améliorer la lisibilité, mais cela ne règle pas les problèmes d'optimisation. Mon tuteur, François LALAY, m'a orienté vers une libraire qu'il utilise dans le site Numérobis, Zustand. Zustand permet de créer un "store", qui va stocker les données que l'on veut partager entre différents composants. Ce store est indépendant de React, les composants vont donc pouvoir interagir avec pour récupérer les infos nécessaires. De plus, grâce aux sélecteurs de Zustand, seulement sont mis à jour les composants qui utilisent une valeur du store qui a été modifiée, ce qui réduit grandement le nombre de rendus. On retrouve donc dans ce store les données stockées ainsi que les méthodes de modification, cependant, tout comme les états React, les valeurs sont immutables, c'est-à-dire qu'on va "remplacer" par la nouvelle valeur, plutôt que de modifier l'ancienne.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{storeZustand.png}
+    \caption{Mon store Zustand}
+    \label{fig:store-zustand}
+\end{figure}
+
+Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique, maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page.
+
+\section{Autres petites missions}
+Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions, 
+
+
+\chapter{Conclusion}
 
 \end{document}

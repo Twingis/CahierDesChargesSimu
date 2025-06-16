@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.28)  11 JUN 2025 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.28)  16 JUN 2025 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -201,6 +201,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip51
+) (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
 ) (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip52
@@ -308,48 +310,55 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip67
 \f@nch@widthR=\skip68
 \@temptokenb=\toks27
+) (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count317
+\float@exts=\toks28
+\float@box=\box55
+\@float@everytoks=\toks29
+\@floatcapt=\box56
 ) (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
+\l__color_backend_stack_int=\count318
 ) (rapportStage.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported  on input line 11.
 )
 \openout1 = `rapportStage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \degres on input line 34.
-LaTeX Info: Redefining \up on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Info: Redefining \degres on input line 36.
+LaTeX Info: Redefining \up on input line 36.
  (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
+\scratchcounter=\count319
 \scratchdimen=\dimen180
-\scratchbox=\box55
-\nofMPsegments=\count319
-\nofMParguments=\count320
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count321
+\scratchbox=\box57
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count322
 \MPscratchDim=\dimen181
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks31
 ) (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -362,7 +371,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 36.
  (rapportStage.out) (rapportStage.out)
 \@outlinefile=\write3
 \openout3 = `rapportStage.out'.
@@ -402,11 +411,11 @@ Package hyperref Info: Link coloring ON on input line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -419,7 +428,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \newpage
+l.59 \newpage
               [1
 
 ]
@@ -455,59 +464,216 @@ Chapitre 2.
 [8]
 
 [9]
-<kanban.png, id=157, 697.8572pt x 479.54156pt>
+<kanban.png, id=152, 697.8572pt x 479.54156pt>
 File: kanban.png Graphic file (type png)
 <use kanban.png>
-Package pdftex.def Info: kanban.png  used on input line 149.
+Package pdftex.def Info: kanban.png  used on input line 151.
 (pdftex.def)             Requested size: 295.90979pt x 203.33781pt.
 
 
-[10 <./kanban.png>]
-<hydraJSON.png, id=166, 231.86626pt x 111.41624pt>
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.160 
+       <./kanban.png>]
+<hydraJSON.png, id=161, 231.86626pt x 111.41624pt>
 File: hydraJSON.png Graphic file (type png)
 <use hydraJSON.png>
-Package pdftex.def Info: hydraJSON.png  used on input line 169.
-(pdftex.def)             Requested size: 295.90979pt x 142.20258pt.
+Package pdftex.def Info: hydraJSON.png  used on input line 171.
+(pdftex.def)             Requested size: 185.49324pt x 89.1331pt.
 
 
 [11]
-<jsonSimu.png, id=171, 407.27156pt x 399.74344pt>
+<jsonSimu.png, id=166, 407.27156pt x 399.74344pt>
 File: jsonSimu.png Graphic file (type png)
 <use jsonSimu.png>
-Package pdftex.def Info: jsonSimu.png  used on input line 179.
-(pdftex.def)             Requested size: 295.90979pt x 290.45006pt.
+Package pdftex.def Info: jsonSimu.png  used on input line 181.
+(pdftex.def)             Requested size: 244.3648pt x 239.8479pt.
 
 
-[12 <./hydraJSON.png> <./jsonSimu.png>]
-<SerializerWorkflow.png, id=181, 862.22125pt x 391.4625pt>
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.187 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.187 
+       <./hydraJSON.png> <./jsonSimu.png>]
+<SerializerWorkflow.png, id=176, 862.22125pt x 391.4625pt>
 File: SerializerWorkflow.png Graphic file (type png)
 <use SerializerWorkflow.png>
-Package pdftex.def Info: SerializerWorkflow.png  used on input line 188.
+Package pdftex.def Info: SerializerWorkflow.png  used on input line 190.
 (pdftex.def)             Requested size: 295.90979pt x 134.34389pt.
 
 
-[13 <./SerializerWorkflow.png>]
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.200 
+       <./SerializerWorkflow.png>]
+<docSimulatorInput.png, id=185, 259.7203pt x 219.06844pt>
+File: docSimulatorInput.png Graphic file (type png)
+<use docSimulatorInput.png>
+Package pdftex.def Info: docSimulatorInput.png  used on input line 203.
+(pdftex.def)             Requested size: 207.77652pt x 175.25497pt.
+<docSimulatorOutput.png, id=186, 103.88812pt x 39.14626pt>
+File: docSimulatorOutput.png Graphic file (type png)
+<use docSimulatorOutput.png>
+Package pdftex.def Info: docSimulatorOutput.png  used on input line 210.
+(pdftex.def)             Requested size: 83.1106pt x 31.31703pt.
 
-[14] (rapportStage.aux)
+
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.223 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.223 
+       <./docSimulatorInput.png> <./docSimulatorOutput.png>]
+<adhesionList.png, id=197, 408.02437pt x 383.18156pt>
+File: adhesionList.png Graphic file (type png)
+<use adhesionList.png>
+Package pdftex.def Info: adhesionList.png  used on input line 238.
+(pdftex.def)             Requested size: 285.61511pt x 268.22525pt.
+
+
+[15]
+<detailAdhe.png, id=203, 396.7322pt x 288.3272pt>
+File: detailAdhe.png Graphic file (type png)
+<use detailAdhe.png>
+Package pdftex.def Info: detailAdhe.png  used on input line 248.
+(pdftex.def)             Requested size: 238.04114pt x 172.99763pt.
+
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.254 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.254 
+       <./adhesionList.png> <./detailAdhe.png>]
+<import.png, id=212, 388.45125pt x 286.82156pt>
+File: import.png Graphic file (type png)
+<use import.png>
+Package pdftex.def Info: import.png  used on input line 257.
+(pdftex.def)             Requested size: 233.07254pt x 172.09425pt.
+<adheVar.png, id=213, 407.27156pt x 320.69812pt>
+File: adheVar.png Graphic file (type png)
+<use adheVar.png>
+Package pdftex.def Info: adheVar.png  used on input line 266.
+(pdftex.def)             Requested size: 244.3648pt x 192.42035pt.
+
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.272 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.272 
+       <./import.png> <./adheVar.png>]
+<responsive.png, id=222, 420.82219pt x 12.7978pt>
+File: responsive.png Graphic file (type png)
+<use responsive.png>
+Package pdftex.def Info: responsive.png  used on input line 277.
+(pdftex.def)             Requested size: 336.6582pt x 10.23824pt.
+<vueMobile.png, id=223, 324.46219pt x 654.19406pt>
+File: vueMobile.png Graphic file (type png)
+<use vueMobile.png>
+Package pdftex.def Info: vueMobile.png  used on input line 286.
+(pdftex.def)             Requested size: 129.78256pt x 261.67299pt.
+
+
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.290 
+       <./responsive.png>]
+<props+vs+context.png, id=231, 512.91624pt x 275.0275pt>
+File: props+vs+context.png Graphic file (type png)
+<use props+vs+context.png>
+Package pdftex.def Info: props+vs+context.png  used on input line 297.
+(pdftex.def)             Requested size: 205.16286pt x 110.00905pt.
+
+
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.305 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.305 
+       <./vueMobile.png> <./props+vs+context.png>]
+<providerHell.png, id=240, 378.66469pt x 103.13531pt>
+File: providerHell.png Graphic file (type png)
+<use providerHell.png>
+Package pdftex.def Info: providerHell.png  used on input line 308.
+(pdftex.def)             Requested size: 227.20056pt x 61.88165pt.
+<storeZustand.png, id=241, 526.96875pt x 502.87875pt>
+File: storeZustand.png Graphic file (type png)
+<use storeZustand.png>
+Package pdftex.def Info: storeZustand.png  used on input line 317.
+(pdftex.def)             Requested size: 210.78375pt x 201.14793pt.
+
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.323 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.323 
+       <./providerHell.png> <./storeZustand.png>]
+
+[21]
+Chapitre 3.
+
+
+[22
+
+] (rapportStage.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `rapportStage.out' has not changed.
-(rerunfilecheck)             Checksum: 005B5489CD8E2DA2674163D97BF1717A;2936.
+(rerunfilecheck)             Checksum: B4B7BD2B34589BF90BB5375718932043;2881.
  ) 
 Here is how much of TeX's memory you used:
- 12869 strings out of 469923
- 205476 string characters out of 5467718
- 608513 words of memory out of 5000000
- 39487 multiletter control sequences out of 15000+600000
+ 13070 strings out of 469923
+ 209305 string characters out of 5467718
+ 610744 words of memory out of 5000000
+ 39660 multiletter control sequences out of 15000+600000
  643242 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1367b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1422b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on rapportStage.pdf (15 pages, 233992 bytes).
+Output written on rapportStage.pdf (23 pages, 466224 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
