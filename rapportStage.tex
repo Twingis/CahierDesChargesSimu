@@ -141,7 +141,10 @@ En résumé, il faut une page permettant de :
 Au cours du sage, j'ai utilisé et découvert de nombreux outils, que je connaissait et utilisait déjà comme Git et GitLab, ou de nouveaux comme Jira pour faire de la gestion de projet. Cependant les outils que j'ai le plus utilisé de loin, ce sont les documentations des languages et technologies utilisés. 
 
 \subsection{Git}
-Git est certainement le software le plus important dans le monde de l'informatique avec Linux. C'est un gestionnaire de versions, c'est-à-dire qu'il permet de stocker un ensemble de fichiers, d'y apporter des modifications et de conserver ainsi l'historique de ces. Ici, je n'ai pas découvert Git, mais son utilisation dans le monde professionnel, la logique de "production" et de "développement" et donc le fonctionnement des branches. Avant ce stage, mon utilisation de Git était assez rudimentaire, je me contentais de la simple branche "main", puis ajouter mes modifications une fois que cela fonctionnait en local. Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Afin de développer, je crée une nouvelle branche à partir de develop, puis ajoute mes modifications au fur et à mesure, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement.
+Git est certainement le software le plus important dans le monde de l'informatique avec Linux. C'est un gestionnaire de versions, c'est-à-dire qu'il permet de stocker un ensemble de fichiers, d'y apporter des modifications et de conserver ainsi l'historique de ces. Ici, je n'ai pas découvert Git, mais son utilisation dans le monde professionnel, la logique de "production" et de "développement" et donc le fonctionnement des branches. Avant ce stage, mon utilisation de Git était assez rudimentaire, je me contentais de la simple branche "main", puis ajouter mes modifications une fois que cela fonctionnait en local.
+
+
+Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Pour de développer, je crée une nouvelle branche à partir de develop, puis ajoute mes modifications au fur et à mesure, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement.
 
 \subsection{Gestion de Projet}
 Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je travaillais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges, qui devait présenter ma vision du projet, que j'ai présenté lors de ma première réunion hebdomadaire. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec quelques personnes du pôle numérique, où François LALAY présente ses avancées sur le projet Numérobis. J'ai donc aussi pris part à ces réunions sur ma période de présence, où je présentais donc les évolutions du simulateur. Lors de ces réunions, chacun peut donner ses impressions et proposer des changements ou ajouts, et donc afin de ne pas me perdre dans les demandes, j'ai utilisé Jira et son tableau Kanban*, ici je place dans la colonne "TO DO" les tâches à développer, "IN PROGRESS" la tâche en cours et dans "DONE" les tâches terminées.
@@ -183,7 +186,7 @@ Afin de réaliser le back-end du simulateur, je me suis grandement inspiré de l
     \label{fig:json-simu}
 \end{figure}
 
-On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créés à la dénormalisation quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de dénormalisation, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony, de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de sérialisation et désexualisation.
+On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créés à la dénormalisation quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de dénormalisation, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony, de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de sérialisation et déserialisation.
 
 \begin{figure}[h]
     \centering
@@ -235,11 +238,12 @@ La liste des adhésions, c'est l'endroit où on affiche la liste qui contient le
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{adhesionList.png}
+    \includegraphics[scale=0.5]{adhesionList.png}
     \caption{Liste des adhésions}
     \label{fig:list-adhe}
 \end{figure}
-\vspace{1em}
+
+\vspace{2em}
 
 Le composant de détail consiste essentiellement en un groupe de checkbox pour choisir les formules. À l'origine, les formules étaient récupérées par un appel API, mais par souci d'optimisation, j'injecte désormais dans le composant les formules à afficher, ce qui réduit le nombre d'appels à l'API. Ce composant apparaît aussi dans une modale quand on sélectionne une nouvelle politique, ce qui permet de faire disparaître l'affichage classique de ce composant pour la vue mobile.
 
@@ -319,12 +323,54 @@ Dans un premier temps, j'avais déplacé la création des états et des contexte
     \label{fig:store-zustand}
 \end{figure}
 
-Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique, maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page.
+Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique. Maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page.
 
 \section{Autres petites missions}
-Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions, 
+Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions. La première fut de développer une vue mobile utile pour la globalité du site. J'ai donc commencé par modifier le layout principal, ce layout toujours présent est en deux parties, une barre de navigation latérale et un header. Évidemment, ce type de layout n'est pas adapté à une vue mobile, cependant j'avais pour consigne de ne pas modifier la vue bureau. J'ai donc utilisé les tags Tailwind, j'ai fait le choix d'intégrer la barre de navigation dans un popover, élément s'affichant au-dessus du contenu, qui s'affiche en cliquant sur un bouton ajouté au header.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{headerMob.png}
+    \caption{Header mobile}
+    \label{fig:header-mob}
+\end{figure}
+
+Le header a une position "sticky", c'est-à-dire que l'élément est dans le flux normal du document, mais ici si l'on scroll, le header devient fixe en haut de la fenêtre. J'ai aussi dû réduire le nombre d'informations comparé au header de la vue bureau afin que tout loge dans la largeur d'un mobile.
+J'ai aussi rapidement refait la disposition des différentes pages en mobile, de manière à ce qu'elles soient consultables même si très peu, voire pas du tout, utilisées sur mobile.
+
+\vspace{1em}
+
+Ma deuxième mission secondaire a été l'implémentation d'un mode sombre. Tailwind le permet facilement à l'aide du tag "dark:". Ce tag active la classe derrière les deux points, quand la classe "dark" se trouve plus haut dans l'arbre HTML, c'est le même fonctionnement que pour le design responsive. Cependant, cette méthode nécessite d'écrire explicitement chaque changement du mode sombre dans tous les composants, faisable en cours de développement mais terriblement long sur un projet entier où ça n'a jamais été fait. J'ai donc fait des recherches afin de trouver une solution, le fichier de configuration de Tailwind est le fichier où l'on va pouvir enregistré par exemple les couleurs que l'on va utilisé dans le site, François LALAY à choisis sa palette de couleur avec Radix UI, site qui propose des progressions de couleurs qui ont été étudié afin d'optimisé l'accessibilité. Ces progressions comportent une dizaine de couleur, partant des couleurs de fond jusqu'aux couleurs de textes. Radix Ui donnent aussi la version mode sombre de chaque gamme, facilitant son développement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{colorRadixUi.png}
+    \caption{Exemple de couleurs de Radix UI}
+    \label{fig:radix-colors}
+\end{figure}
+
+Après quelques recherches, j'ai trouvé la solution. Il faut définir des variables de couleurs CSS dans le globals.css. Je crée donc le thème classique ainsi que le thème sombre, et dans chaque je rentre toutes les couleurs correspondantes avec le même nom pour les équivalences, c'est-à-dire que la couleur primary-200 par exemple se définit avec le code \#e1e9ff pour le thème classique, mais avec le code \#1d2e62 pour le thème sombre, ce qui permet donc de ne pas avoir à réécrire les couleurs dans chaque composant, quand on est sur le thème classique toutes les variables de couleurs prennent une certaine valeur, qui change quand on passe au thème sombre.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{exempleDarkmode.png}
+    \caption{Le mode sombre de Numérobis}
+    \label{fig:dark-mode}
+\end{figure}
 
 \chapter{Conclusion}
 
+Ce stage de 10 semaines à l'Agence Technique de la Charente m'aura permis d'avoir une expérience intéressante et surtout enrichissante, sur le plan professionnel principalement, car même si le penchant technique est très formateur, c'est surtout sur le plan professionnel que je pense avoir le plus progressé. Que ce soit la communication avec les utilisateurs, la gestion de projet, les réunions, c'est le genre de choses que l'on a du mal à évaluer l'importance au début en tant qu'étudiant.
+
+\vspace{1em}
+
+Sur le plan technique, le fait de m'être obligé de moins utiliser l'IA m'a fait progresser dans la réflexion sur la résolution de problèmes. De plus, l'utilisation de nouvelles technologies m'a appris à utiliser plus efficacement les documentations, ainsi qu'à comprendre les outils par moi-même. La manière très pédagogue que François LALAY a eue de m'expliquer ainsi que de me guider m'a, je pense, aussi beaucoup aidé au cours du stage.
+
+\vspace{1em}
+
+Le développement du simulateur fut un projet très enrichissant pour moi, le fait de toucher au back-end aussi bien qu'au front-end me permet de mieux comprendre l'architecture d'une application fonctionnant avec une API Rest, le processus de sérialisation, désérialisation. Mais aussi, de par la complexité de la grille tarifaire et le fait que ce soit un projet qui va être utilisé et non universitaire, j'ai dû apprendre à comprendre les demandes des clients/utilisateurs du site et donc m'adapter à ce qu'ils veulent.
+
+\vspace{1em}
+
+Je reste évidemment conscient que le simulateur est certainement perfectible, mais je suis cependant très fier de ce projet, mon plus long à ce jour, et ce même si avant ce stage, le développement web, notamment front-end, je n'appréciais pas particulièrement cela. Ce stage m'a fait redécouvrir le développement web, que j'apprécie bien plus maintenant.
 \end{document}
