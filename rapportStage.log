@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.28)  19 JUN 2025 09:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.28)  23 JUN 2025 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,33 +462,32 @@ Chapitre 2.
 ]
 
 [8]
-
-[9]
-<kanban.png, id=152, 697.8572pt x 479.54156pt>
+<kanban.png, id=171, 697.8572pt x 479.54156pt>
 File: kanban.png Graphic file (type png)
 <use kanban.png>
 Package pdftex.def Info: kanban.png  used on input line 154.
 (pdftex.def)             Requested size: 295.90979pt x 203.33781pt.
 
 
+[9]
+
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 
+l.167 
        <./kanban.png>]
-<hydraJSON.png, id=161, 231.86626pt x 111.41624pt>
-File: hydraJSON.png Graphic file (type png)
-<use hydraJSON.png>
-Package pdftex.def Info: hydraJSON.png  used on input line 174.
-(pdftex.def)             Requested size: 185.49324pt x 89.1331pt.
-
 
 [11]
-<jsonSimu.png, id=166, 407.27156pt x 399.74344pt>
+<hydraJSON.png, id=197, 231.86626pt x 111.41624pt>
+File: hydraJSON.png Graphic file (type png)
+<use hydraJSON.png>
+Package pdftex.def Info: hydraJSON.png  used on input line 192.
+(pdftex.def)             Requested size: 185.49324pt x 89.1331pt.
+<jsonSimu.png, id=198, 407.27156pt x 399.74344pt>
 File: jsonSimu.png Graphic file (type png)
 <use jsonSimu.png>
-Package pdftex.def Info: jsonSimu.png  used on input line 184.
+Package pdftex.def Info: jsonSimu.png  used on input line 202.
 (pdftex.def)             Requested size: 244.3648pt x 239.8479pt.
 
 
@@ -496,17 +495,17 @@ Package pdftex.def Info: jsonSimu.png  used on input line 184.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.190 
+l.208 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.190 
+l.208 
        <./hydraJSON.png> <./jsonSimu.png>]
-<SerializerWorkflow.png, id=176, 862.22125pt x 391.4625pt>
+<SerializerWorkflow.png, id=208, 862.22125pt x 391.4625pt>
 File: SerializerWorkflow.png Graphic file (type png)
 <use SerializerWorkflow.png>
-Package pdftex.def Info: SerializerWorkflow.png  used on input line 193.
+Package pdftex.def Info: SerializerWorkflow.png  used on input line 211.
 (pdftex.def)             Requested size: 295.90979pt x 134.34389pt.
 
 
@@ -514,179 +513,177 @@ Package pdftex.def Info: SerializerWorkflow.png  used on input line 193.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.203 
+l.221 
        <./SerializerWorkflow.png>]
-<docSimulatorInput.png, id=185, 259.7203pt x 219.06844pt>
+<docSimulatorInput.png, id=217, 259.7203pt x 219.06844pt>
 File: docSimulatorInput.png Graphic file (type png)
 <use docSimulatorInput.png>
-Package pdftex.def Info: docSimulatorInput.png  used on input line 206.
+Package pdftex.def Info: docSimulatorInput.png  used on input line 224.
 (pdftex.def)             Requested size: 207.77652pt x 175.25497pt.
-<docSimulatorOutput.png, id=186, 103.88812pt x 39.14626pt>
-File: docSimulatorOutput.png Graphic file (type png)
-<use docSimulatorOutput.png>
-Package pdftex.def Info: docSimulatorOutput.png  used on input line 213.
-(pdftex.def)             Requested size: 83.1106pt x 31.31703pt.
 
 
 [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.226 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.226 
-       <./docSimulatorInput.png> <./docSimulatorOutput.png>]
-<adhesionList.png, id=197, 408.02437pt x 383.18156pt>
+l.237 
+       <./docSimulatorInput.png>]
+<adhesionList.png, id=226, 408.02437pt x 383.18156pt>
 File: adhesionList.png Graphic file (type png)
 <use adhesionList.png>
-Package pdftex.def Info: adhesionList.png  used on input line 241.
+Package pdftex.def Info: adhesionList.png  used on input line 252.
 (pdftex.def)             Requested size: 204.01169pt x 191.5903pt.
 
 
 [15
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.249 
+l.260 
        <./adhesionList.png>]
-<detailAdhe.png, id=205, 396.7322pt x 288.3272pt>
+<detailAdhe.png, id=234, 396.7322pt x 288.3272pt>
 File: detailAdhe.png Graphic file (type png)
 <use detailAdhe.png>
-Package pdftex.def Info: detailAdhe.png  used on input line 252.
+Package pdftex.def Info: detailAdhe.png  used on input line 263.
 (pdftex.def)             Requested size: 238.04114pt x 172.99763pt.
-<import.png, id=206, 388.45125pt x 286.82156pt>
+<import.png, id=235, 388.45125pt x 286.82156pt>
 File: import.png Graphic file (type png)
 <use import.png>
-Package pdftex.def Info: import.png  used on input line 261.
+Package pdftex.def Info: import.png  used on input line 272.
 (pdftex.def)             Requested size: 233.07254pt x 172.09425pt.
 
 
 [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.278 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.267 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.267 
+l.278 
        <./detailAdhe.png> <./import.png>]
-<adheVar.png, id=215, 407.27156pt x 320.69812pt>
+<adheVar.png, id=244, 407.27156pt x 320.69812pt>
 File: adheVar.png Graphic file (type png)
 <use adheVar.png>
-Package pdftex.def Info: adheVar.png  used on input line 270.
+Package pdftex.def Info: adheVar.png  used on input line 281.
 (pdftex.def)             Requested size: 244.3648pt x 192.42035pt.
-<responsive.png, id=216, 420.82219pt x 12.7978pt>
-File: responsive.png Graphic file (type png)
-<use responsive.png>
-Package pdftex.def Info: responsive.png  used on input line 281.
-(pdftex.def)             Requested size: 336.6582pt x 10.23824pt.
 
 
 [17
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.285 
-       <./adheVar.png>]
-<vueMobile.png, id=223, 324.46219pt x 654.19406pt>
+l.296 \end{verbatim}
+                     <./adheVar.png>]
+<vueMobile.png, id=254, 324.46219pt x 654.19406pt>
 File: vueMobile.png Graphic file (type png)
 <use vueMobile.png>
-Package pdftex.def Info: vueMobile.png  used on input line 290.
+Package pdftex.def Info: vueMobile.png  used on input line 303.
 (pdftex.def)             Requested size: 129.78256pt x 261.67299pt.
-<props+vs+context.png, id=224, 512.91624pt x 275.0275pt>
+<props+vs+context.png, id=255, 512.91624pt x 275.0275pt>
 File: props+vs+context.png Graphic file (type png)
 <use props+vs+context.png>
-Package pdftex.def Info: props+vs+context.png  used on input line 301.
+Package pdftex.def Info: props+vs+context.png  used on input line 314.
 (pdftex.def)             Requested size: 205.16286pt x 110.00905pt.
 
 
 [18
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.305 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.305 
-       <./responsive.png> <./vueMobile.png>]
-<providerHell.png, id=234, 378.66469pt x 103.13531pt>
+l.318 
+       <./vueMobile.png>]
+<providerHell.png, id=263, 378.66469pt x 103.13531pt>
 File: providerHell.png Graphic file (type png)
 <use providerHell.png>
-Package pdftex.def Info: providerHell.png  used on input line 312.
+Package pdftex.def Info: providerHell.png  used on input line 325.
 (pdftex.def)             Requested size: 227.20056pt x 61.88165pt.
-<storeZustand.png, id=235, 526.96875pt x 502.87875pt>
+<storeZustand.png, id=264, 526.96875pt x 502.87875pt>
 File: storeZustand.png Graphic file (type png)
 <use storeZustand.png>
-Package pdftex.def Info: storeZustand.png  used on input line 321.
+Package pdftex.def Info: storeZustand.png  used on input line 334.
 (pdftex.def)             Requested size: 210.78375pt x 201.14793pt.
 
 
 [19
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.13}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.325 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14}) has been already used, duplicate ignored
+l.337 \end{figure}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.325 
-       <./props+vs+context.png> <./providerHell.png>]
-<headerMob.png, id=244, 303.38344pt x 335.00156pt>
+l.337 \end{figure}
+                   <./props+vs+context.png> <./providerHell.png>]
+<headerMob.png, id=273, 303.38344pt x 335.00156pt>
 File: headerMob.png Graphic file (type png)
 <use headerMob.png>
-Package pdftex.def Info: headerMob.png  used on input line 333.
+Package pdftex.def Info: headerMob.png  used on input line 346.
 (pdftex.def)             Requested size: 182.03146pt x 201.00247pt.
 
 
 [20
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.337 
+l.350 
        <./storeZustand.png>]
-<colorRadixUi.png, id=251, 869.49844pt x 35.38219pt>
+<colorRadixUi.png, id=280, 869.49844pt x 35.38219pt>
 File: colorRadixUi.png Graphic file (type png)
 <use colorRadixUi.png>
-Package pdftex.def Info: colorRadixUi.png  used on input line 347.
+Package pdftex.def Info: colorRadixUi.png  used on input line 361.
 (pdftex.def)             Requested size: 347.79321pt x 14.15262pt.
 
 
 [21
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.353 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.353 
-       <./headerMob.png> <./colorRadixUi.png>]
-<exempleDarkmode.png, id=260, 278.54062pt x 185.19188pt>
+l.365 
+       <./headerMob.png>]
+<exempleDarkmode.png, id=287, 278.54062pt x 185.19188pt>
 File: exempleDarkmode.png Graphic file (type png)
 <use exempleDarkmode.png>
-Package pdftex.def Info: exempleDarkmode.png  used on input line 356.
+Package pdftex.def Info: exempleDarkmode.png  used on input line 370.
 (pdftex.def)             Requested size: 139.26996pt x 92.5957pt.
 
 
 [22
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.18}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.361 \chapter
-              {Conclusion} <./exempleDarkmode.png>]
+l.383 \chapter
+              {Conclusion}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.383 \chapter
+              {Conclusion} <./colorRadixUi.png> <./exempleDarkmode.png>]
 Chapitre 3.
 
 
 [23
+
+]
+Chapitre 4.
+
+
+[24
+
+]
+Chapitre 5.
+
+
+[25
+
+]
+Chapitre 6.
+
+
+[26
 
 ] (rapportStage.aux)
  ***********
@@ -694,20 +691,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `rapportStage.out' has not changed.
-(rerunfilecheck)             Checksum: B4B7BD2B34589BF90BB5375718932043;2881.
+(rerunfilecheck)             Checksum: 89B2F44F399FAD2C4460E28EC3ECAB3E;3086.
  ) 
 Here is how much of TeX's memory you used:
- 13098 strings out of 469923
- 209874 string characters out of 5467718
- 610903 words of memory out of 5000000
- 39684 multiletter control sequences out of 15000+600000
- 643242 words of font info for 81 fonts, out of 8000000 for 9000
+ 13128 strings out of 469923
+ 209963 string characters out of 5467718
+ 615795 words of memory out of 5000000
+ 39679 multiletter control sequences out of 15000+600000
+ 645082 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1422b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on rapportStage.pdf (24 pages, 515092 bytes).
+ 75i,12n,79p,1368b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
+Output written on rapportStage.pdf (27 pages, 569593 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -200,6 +200,8 @@ INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\
 INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 OUTPUT rapportStage.toc
+INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
 INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
 INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
 INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
@@ -241,13 +243,6 @@ INPUT .\docSimulatorInput.png
 INPUT .\docSimulatorInput.png
 INPUT .\docSimulatorInput.png
 INPUT .\docSimulatorInput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
-INPUT .\docSimulatorOutput.png
 INPUT .\adhesionList.png
 INPUT .\adhesionList.png
 INPUT .\adhesionList.png
@@ -276,13 +271,7 @@ INPUT .\adheVar.png
 INPUT .\adheVar.png
 INPUT .\adheVar.png
 INPUT .\adheVar.png
-INPUT .\responsive.png
-INPUT .\responsive.png
-INPUT .\responsive.png
-INPUT .\responsive.png
-INPUT .\responsive.png
-INPUT .\responsive.png
-INPUT .\responsive.png
+INPUT C:\Users\ldrouhot\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT .\vueMobile.png
 INPUT .\vueMobile.png
 INPUT .\vueMobile.png
@@ -335,6 +324,8 @@ INPUT .\exempleDarkmode.png
 INPUT rapportStage.aux
 INPUT .\rapportStage.out
 INPUT .\rapportStage.out
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
@@ -345,6 +336,10 @@ INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\ldrouhot\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk

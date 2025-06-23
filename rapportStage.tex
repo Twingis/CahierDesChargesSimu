@@ -50,7 +50,7 @@ Je tiens aussi à remercier M. Ronan MÉVELLEC, Directeur, qui a pris le temps, 
 
 \vspace{1em}
 
-Je remercie aussi l’ensemble de l’équipe de l’ATD 16 qui m’a très bien accueilli, pris le temps de m’écouter lors de réunions, mais aussi de m’expliquer leur travail, ce qui fut très enrichissant. Plus précisément : Lionel CLERCQ, Responsable du pôle numérique, Charlotte CIARDULLI et Perrine MADIOT, toutes deux chargées du support administration numérique et logiciels métiers, ainsi que Pierre SAUZE, expert en numérique, pour leur temps et leurs conseils lors des réunions hebdomadaires du projet de développement.
+Je remercie aussi l’ensemble de l’équipe de l’ATD 16 qui m’a très bien accueilli, pris le temps de m’écouter lors de réunions, mais aussi de m’expliquer leur travail, ce qui fut très enrichissant. Plus précisément l'équipe projet Numérobis : Lionel CLERCQ, Responsable du pôle numérique, Charlotte CIARDULLI et Perrine MADIOT, toutes deux chargées du support administration numérique et logiciels métiers, ainsi que Pierre SAUZE, expert en numérique, pour leur temps et leurs conseils lors des réunions hebdomadaires du projet de développement.
 
 \vspace{1em}
 
@@ -61,12 +61,11 @@ Enfin, je remercie aussi mon professeur référent, M. Sébastien FAUCOU.
 \addcontentsline{toc}{chapter}{Résumé}
 \thispagestyle{empty}
 
-Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage, j’ai mis en pratique ainsi que développé mes connaissances et compétences en développement web. J’ai donc développé une nouvelle page au site interne de l’agence, page de simulation permettant à un agent de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite adhérer en rentrant les variables nécessaires (nombre d’habitants, voirie, etc.)
+Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage, j’ai mis en pratique ainsi que développé mes connaissances et compétences en développement web. J’ai donc développé une nouvelle fonctionnalité intégré à l'application interne de l’agence, il s'agit d'une page de simulation permettant à un agent de l'ATD 16 de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite adhérer en rentrant les variables nécessaires (nombre d’habitants, voirie, etc.).
 
 \vspace{1em}
 
-To complete my second year at the l’Institut Universitaire Technologique de Nantes, I had to validate a 10 week internship at ATD16. During this internship, I used and developed my knowledge and skills in web development. I created a new page on the intern website of the agency. This is a simulating page that allows an agent to calculate a price that a possible member could pay for the services this possible member would like to have by entering the necessary variables (number of habitants, total roads kilometer, etc.)
-
+As part of my second-year Technological University Bachelor’s program at the Institut Universitaire Technologique de Nantes, I completed a 10-week internship within the Agence Technique du Département de la Charente. During this internship, I put into practice and developed my knowledge and skills in web development. I have therefore developed a new feature integrated into the agency’s internal application, it is a simulation page allowing an agent from ATD 16 to calculate the price that a member would have to pay for the policies they wish to join by entering the necessary variables. (number of inhabitants, roads, etc.).
 
 \tableofcontents               
 
@@ -80,76 +79,77 @@ Tous les mots suivis d'un astérisque sont définis dans le glossaire
 
 
 \chapter{Introduction}         
-Étudiant en deuxième année de BUT Informatique, je dois réaliser un stage en entreprise d'une durée de 10 semaines afin de valider mon année. Ce stage se déroule donc entre le 22 avril 2025 et le 27 juin 2025, le but de ce stage est de mettre en pratique les compétences acquises dans notre cursus, ainsi que nous faire découvrir le monde professionnel en informatique.
+Étudiant en deuxième année de BUT Informatique, je dois réaliser un stage en entreprise d'une durée de 10 semaines afin de valider mon année. Ce stage se déroule entre le 22 avril 2025 et le 27 juin 2025, le but de ce stage est de mettre en pratique les compétences acquises dans notre cursus, ainsi que de nous faire découvrir le monde professionnel en informatique.
 
 \vspace{1em}
 
-J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départementale de la Charente (ATD 16), j'ai donc été intégré à son pôle numérique en compagnie de François LALAY, mon maître de stage, unique développeur du site de l'agence. Étant donné des problèmes avec le GitLab de l'agence la semaine de mon arrivée, on m'a proposé de réaliser un mini-projet avec les technologies utilisées dans le site de l'agence, afin de me familiariser avec ces technologies, sont le framework JavaScript Next.js pour le front-end, et le framework PHP Symfony ainsi que Api-Platform pour le back-end. Une fois les problèmes résolus, j'ai pu commencer ma première mission, qui était le développement d'une page de simulateur sur le site interne à l'agence, et donc développer aussi bien la partie front-end que back-end
+J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départementale de la Charente (ATD 16), j'ai donc été intégré à son pôle numérique en compagnie de François LALAY, mon maître de stage, unique développeur de l'application de l'agence ainsi qu'à l'équipe projet Numérobis. A mon arrivée j'ai réalisé un mini-projet avec les technologies utilisées pour le développement de l'application de l'agence, afin de me familiariser avec. Ces technologies sont le framework \footnote{Un framework c'est une infrastructure logicielle qui offre un cadre pour le développement}* React Next.js pour le front-end\footnote{Le front-end c'est la partie avec laquelle le client peut interagir du code}*, et le framework* PHP Symfony ainsi que API platform pour le back-end\footnote{Le back-end c'est la partie du logiciel qui accède aux données et les traite}*. Une fois les problèmes résolus, j'ai pu commencer ma première mission, qui était le développement de la fonctionnalité de simulation sur l'application web interne à l'agence, et donc développer aussi bien la partie front-end* que back-end*.
 
 \vspace{1em}
 
-Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible, on m'a demandé de réaliser moi-même un cahier des charges et des wireframe*. Lors des réunions hebdomadaires avec certains agents du pôle numérique, j'ai présenté ce cahier des charges, on m'a alors précisé l'attendue de la mission. Une fois les bases et besoins établis, j'ai pu commencer le développement du simulateur. J'ai naturellement commencé par le back-end, où j'ai donc dû comprendre le fonctionnement de l'API déjà en place, toutes ses entités et ses différentes fonctionnalités. J'ai, dans le même temps, pris connaissance de la grille tarifaire des adhésions à l'ATD 16, ainsi que toutes ses exceptions qui sont de vrais problèmes à implémenter.
+Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible, j'ai donc tout d'abord pris connaissance de la grille tarifaire et de ses contraintes: on m'a demandé de réaliser moi-même un cahier des charges fonctionnel et des wireframes, à partir des premières informations et besoins. Lors des réunions hebdomadaires avec l'équipe projet Numérobis, j'ai présenté ce cahier des charges, on m'a alors précisé l'étendue de la mission et exprimé de nouveaux besoins. Une fois le cadrage délimité, j'ai pu commencer le développement du simulateur. Le développement du projet Numérobis suit un cycle de développement agile, 
+mais avec des réunions seulement deux fois par semaine du fait que François LALAY est le seul développeur, mais il souhaitait garder un contact avec les utilisateurs.
 
 \vspace{1em}
 
-Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents langages de programmation. Le concept le plus important quand j'ai travaillé sur la partie back-end de ma mission a été la serialization et donc aussi la deserialization, ce sont les processus centraux du fonctionnement d'une API rest. Ce sont eux qui assurent que les données soient converties au bon format pour l'envoi, puis convertissent les données reçues au format du langage utilisé. Ces concepts sont intégrés à Symfony et Api-Platform nativement, il suffit de bien les utiliser. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisés, comme le type de route API, les différents événements attachés à ces routes. Pour la partie front-end, la théorie est moins présente car les données et le site sont spécifiques, j'ai donc été amené à utiliser des outils spécifiques aux frameworks avec lesquels on travaille, comme les hooks React ou les stores Zustand.
+Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents langages de programmation. Le concept le plus important quand j'ai travaillé sur la partie back-end* de ma mission a été la sérialisation et donc aussi la désérialisation, ce sont les processus centraux du fonctionnement d'une API* Rest. Ce sont eux qui assurent que les données soient converties au bon format pour l'envoi, puis convertissent les données reçues au format du langage utilisé. Ces concepts sont intégrés à Symfony et API Platform nativement, il suffit de bien les utiliser. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisés, comme le type de route API, les différents événements attachés à ces routes. Pour la partie front-end*, la théorie est moins présente car les données et l'application sont spécifiques, j'ai donc été amené à utiliser des outils spécifiques aux framework*s avec lesquels on travaille, comme les hooks React ou les stores Zustand.
 
 \vspace{1em}
 
-Pour trouver les solutions à la plupart de mes problèmes, un type d'outil fut primordial : les documentations. Quand elles sont bien renseignées, les documentations ont souvent la réponse à tous nos problèmes généraux pour un langage ou un framework. Lorsque j'avais des problèmes plus précis, alors les forums ou les IA sont aussi des outils intéressants, même s'ils ont des limites naturelles posées par le fait qu'ils ne connaissent pas notre projet, il s'agit alors de trouver un cas général donnant une idée de la solution à notre problème.
+Pour trouver des solutions à la plupart de mes problèmes, un type d'outil est primordial : les documentations. Quand elles sont bien renseignées, les documentations ont souvent la réponse à tous nos problèmes généraux pour un langage ou un framework*. Lorsque j'avais des problèmes plus précis, alors les forums ou les IA sont aussi des outils intéressants, même s'ils ont des limites naturelles posées par le fait qu'ils ne connaissent pas notre projet, il s'agit alors de trouver un cas général donnant une idée de la solution à notre problème.
 
 \vspace{1em}
 
 Dans un premier temps, je présenterai l'agence, son statut spécifique, son fonctionnement, ainsi que son intérêt pour les services publics charentais.
 
 
-Dans une seconde partie, je parlerai des outils qui m'ont été utiles ainsi que la réalisation de ma mission de développement
+Dans une seconde partie, je parlerai des outils qui m'ont été utiles, la réalisation de ma mission de développement principale, ainsi que d'autres petites missions
 
 \chapter{Développement}
 
 \section{L'Agence Technique Départementale de la Charente}
-L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO et du Juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente. Pour l'organigramme structurel voir annexe
+L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO (Assistance à Maîtrise d'Ouvrage) et du juridique, puis  a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente. Pour l'organigramme structurel voir annexe
 
 
-M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tous genres de tâches, qu'elles soient numériques, juridiques ou cartographiques. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service public, auquel les collectivités peuvent demander de l'aide, à condition d'adhérer aux politiques adéquates.
+M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tout genre de tâches, qu'elles soient numériques, juridiques ou cartographiques. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service public, auquel les collectivités peuvent demander de l'aide, à condition d'adhérer aux politiques adéquates.
 
 \subsection{Fonctionnement économique}
 
-L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général par strates de nombre d'habitants ou bien au nombre d'habitants, aussi pour la part variable du volet numérique ou le volet AMO par exemple. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes. Pour les détails de la grille tarifaire voire annexe.
+Étant un service publique, l'argent injecté et récolté est surveillé de près, c'est pourquoi il y'a un Conseil d'Administration, présidé par M. Michel CARTERET, ce conseil prend les décisions pour l'ATD, qu'elles soient budgétaires, salariale ou toute autre chose. Ce conseil est composé de représentants des adhérents à l'ATD 16. Monsieur le directeur ne peut qu'appliquer les décisions du conseil, néanmoins la plupart des idées sont suggérées par l'ATD puis validées par le conseil.
+
+L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit d'adhérer aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général au nombre d'habitants. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux boîtes de messagerie ou encore la voirie pour l'entretien des routes. Pour les détails de la grille tarifaire voire annexe.
 
 Enfin, l'ATD propose aussi des appuis ponctuels, services rendus irrégulièrement sur demande d'une collectivité ; il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel, ou encore d'adressage pour les communes. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communautés de communes, des syndicats ou encore le département lui-même.
 
-Étant un service publique, l'argent injecté et récolté est surveillé de près, c'est pourquoi il y'a un Conseil d'Administration, présidé par M. Michel Carteret, ce conseil prend les décisions pour l'ATD, qu'elles soient budgétaires, salariale ou toute autre chose. Ce conseil est peuplé de représentants des adhérents à l'ATD 16. Monsieur le directeur ne peut qu'appliquer les décisions du conseil, néanmoins la plupart des idées sont suggérées par l'ATD puis valider par le conseil.
+
 
 \subsection{Environnement de Travail}
 
-En ce qui est de l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travaille sur un HP ProBook 450 G7, les 8 Go de RAM sont peu afin de faire tourner le serveur du site web et de l'API pour le développement, mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisi Visual Studio Code, c'est adapté au PC pas très performant que j'avais, quelques extensions comme le visualiseur de base de données sont nécessaires afin de limiter le nombre d'outils. Pour le back-end, comme expliqué dans l'introduction, c'est le framework Symfony qui est utilisé avec Api-Platform et donc le langage PHP. Afin de tester les routes API, j'ai utilisé Postman, logiciel permettant, entre autres, de faire des requêtes API. Maria-Db est utilisé pour avoir une copie de la base de données de production en local. Pour le front-end, comme précédemment dans l'introduction, c'est Next.js qui est utilisé en framework JavaScript. C'est le framework le plus populaire sur le web de nos jours. Tailwind CSS est utilisé pour le style des pages.
-
-
-\section{Explication de la mission}
-
-La mission principale de mon stage est donc la réalisation d'un simulateur de prix d'adhésions sur le site Numérobis, site interne à l'ATD 16. Ce simulateur, doit pouvoir donner un prix pour une structure adhérente, en tenant compte des variables renseignées. Une simulation existait déjà, mais elle se limitait à une seule nouvelle adhésion et ne prenait en compte que les variables déjà rentré. Cette nouvelle version doit dépasser ces limites, il faut pouvoir calculer une ou plusieurs nouvelles adhésion pour une structure déjà adhérente mais aussi pouvoir simulé de zéro une adhésion d'une nouvelle structure. Une contrainte exprimé dès le début du stage est aussi primordiale, ce simulateur doit pouvoir être facilement utilisable sur mobile.
-
-En résumé, il faut une page permettant de :
-\begin{enumerate}
-    \item Simuler une nouvelle adhésion en partant de zéro
-    \item Simuler une nouvelle adhésion en utilisant une structure déjà existante
-    \item Être utilisable sur téléphone
-\end{enumerate}
+En ce qui concerne l'environnement de travail, chaque pôle de l'agence possède son bureau sur l'application de la Combe à Angoulême, Charente. Je travaille sur un HP ProBook 450 G7, les 8 Go de RAM sont peu afin de faire tourner le serveur de l'application web web et de l'API* pour le développement, mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisi Visual Studio Code, c'est adapté au PC pas très performant que j'avais, quelques extensions comme le visualiseur de base de données sont nécessaires afin de limiter le nombre d'outils. Afin de tester les routes API, j'ai utilisé Postman, logiciel permettant, entre autres, de faire des requêtes API. Mariadb est utilisé pour avoir une copie de la base de données de production en local. Pour la gestion de projet j'ai utilisé le tableau Kanban\footnote{C'est un tableau utilisant la méthode Kanban qui organise sont travail tâche par tâche} de Jira.
 
 \section{Les outils}
-Au cours du sage, j'ai utilisé et découvert de nombreux outils, que je connaissait et utilisait déjà comme Git et GitLab, ou de nouveaux comme Jira pour faire de la gestion de projet. Cependant les outils que j'ai le plus utilisé de loin, ce sont les documentations des languages et technologies utilisés. 
+Au cours du stage, j'ai utilisé et découvert de nombreux outils, que je connaissais et utilisait déjà comme Git et GitLab, ou de nouveaux comme Jira pour faire de la gestion de projet. Cependant, les outils que j'ai le plus utilisés de loin, ce sont les documentations des langages et technologies utilisés.
 
 \subsection{Git}
-Git est certainement le software le plus important dans le monde de l'informatique avec Linux. C'est un gestionnaire de versions, c'est-à-dire qu'il permet de stocker un ensemble de fichiers, d'y apporter des modifications et de conserver ainsi l'historique de ces. Ici, je n'ai pas découvert Git, mais son utilisation dans le monde professionnel, la logique de "production" et de "développement" et donc le fonctionnement des branches. Avant ce stage, mon utilisation de Git était assez rudimentaire, je me contentais de la simple branche "main", puis ajouter mes modifications une fois que cela fonctionnait en local.
+Git est certainement le software le plus important dans le monde de l'informatique avec Linux. C'est un gestionnaire de versions, c'est-à-dire qu'il permet de stocker un ensemble de fichiers, d'y apporter des modifications et de conserver ainsi l'historique de ces modifications. Ici, je n'ai pas découvert Git, mais son utilisation dans le monde professionnel, la logique de "production" et de "développement" et donc le fonctionnement des branches. Avant ce stage, mon utilisation de Git était assez rudimentaire, je me contentais de la simple branche "main", puis j'ai ajouté mes modifications une fois que cela fonctionnait en local.
 
 
-Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Pour de développer, je crée une nouvelle branche à partir de develop, puis ajoute mes modifications au fur et à mesure, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement.
+Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API* et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Pour développer, je crée une nouvelle branche à partir de develop, puis commit des modifications au fur et à mesure, une fois satisfait de mon code je le push sur la branche distante, et enfin créer une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement, ceci est donc le workflow\footnote{Le workflow c'est une suite de tâches} de développement.
 
 \subsection{Gestion de Projet}
-Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je travaillais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges, qui devait présenter ma vision du projet, que j'ai présenté lors de ma première réunion hebdomadaire. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec quelques personnes du pôle numérique, où François LALAY présente ses avancées sur le projet Numérobis. J'ai donc aussi pris part à ces réunions sur ma période de présence, où je présentais donc les évolutions du simulateur. Lors de ces réunions, chacun peut donner ses impressions et proposer des changements ou ajouts, et donc afin de ne pas me perdre dans les demandes, j'ai utilisé Jira et son tableau Kanban*, ici je place dans la colonne "TO DO" les tâches à développer, "IN PROGRESS" la tâche en cours et dans "DONE" les tâches terminées.
+Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je développais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges, qui devait présenter ma vision du projet, que j'ai partagé lors de ma première réunion hebdomadaire avec l'équipe proejt Numérobis. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec l'équipe projet Numérobis, composée de :
+\begin{itemize}
+    \item Lionel CLERCQ, Responsable du pôle numérique
+    \item Charlotte CIARDULLI, chargée du support administration numérique et logiciels métiers
+    \item Perrine MADIOT, chargée du support administration numérique et logiciels métiers
+    \item Pierre SAUZE, expert en numérique
+\end{itemize}
+François LALAY y présente ses avancées sur le projet Numérobis, j'ai donc aussi pris part à ces réunions sur ma période de présence, où je présentais donc les évolutions du simulateur. 
 
-\begin{figure}[h]
+
+Lors de ces réunions, chacun peut donner ses impressions et proposer des changements ou ajouts, et donc afin de ne pas me perdre dans les demandes, j'ai utilisé Jira et son tableau Kanban, ici je place dans la colonne "TO DO" les tâches à développer, "IN PROGRESS" la tâche en cours et dans "DONE" les tâches terminées.
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{kanban.png}
     \caption{Tableau Kanban de Jira}
@@ -157,17 +157,35 @@ Le développement de ce simulateur étant mon plus gros et surtout long projet �
 \end{figure}
 
 \subsection{Les documentations et l'IA}
-Certainement le type d'outils que j'ai le plus utilisé, je les ai bien longtemps ignorés au profit d'outils plus "performants", notamment l'IA, mais lors de mon stage je me suis rendu compte de leur intérêt. Documentation d'API-Platform, Tailwind CSS, MDN, autant de documentation que de langages et technologies utilisés. Une fois que j'ai compris comment les utiliser, elles se sont avérées être des outils très puissants. J'ai eu, cependant, quelques soucis avec la documentation Symfony, dont je trouve que la recherche n'est pas très précise, et qui manque parfois d'explications et d'exemples. Ces différentes documentations sont à la base de mon projet, ont répondu à nombre de mes questionnements et recherches.
+Certainement le type d'outils que j'ai le plus utilisé, je les ai bien longtemps ignorés au profit d'outils plus "performants", notamment l'IA, mais lors de mon stage je me suis rendu compte de leur intérêt. Documentation d'API Platform, Tailwind CSS, MDN, autant de documentation que de langages et technologies utilisés. Une fois que j'ai compris comment les utiliser, elles se sont avérées être des outils très puissants. J'ai eu, cependant, quelques soucis avec la documentation Symfony, dont je trouve que la recherche n'est pas très précise, et qui manque parfois d'explications et d'exemples. Ces différentes documentations sont à la base de mon projet, ont répondu à nombre de mes questionnements et recherches.
 
 Un autre outil m'a aussi parfois aidé, Chat GPT, que j'ai beaucoup utilisé pendant le BUT, j'ai donc voulu faire l'effort de moins l'utiliser pendant le stage, ce que j'ai réussi. De plus, il a montré très vite ses limites, car s'il est effectivement très performant pour aider dans des petits projets universitaires, ici la masse conséquente de contexte le limite dans l'exactitude de ses réponses. Je l'ai donc utilisé dans deux types de cas, le premier, quand je ne savais absolument pas comment faire quelque chose, même pas l'idée de comment le faire, j'ai alors utilisé l'IA afin d'avoir un exemple pour commencer, le deuxième, quand j'avais besoin d'explications dont je ne trouvais pas la réponse dans la documentation.
 
 \section{Le simulateur}
-Le développement du simulateur s'est naturellement divisé en deux parties majeures, le front-end et le back-end. Pour la partie back-end, on m'a expliqué que le simulateur ne devait en aucun cas écrire en base de données, il devait se contenter de renvoyer le résultat. Il fallait aussi réutiliser les calculs déjà présents dans l'API, ce qui nécessite de comprendre ce dont ces calculs ont besoin comme paramètres. Pour le Front-end, pendant les réunions hebdomadaires, on a décidé que le simulateur serait une page à part entière du site, et que certaines informations étaient nécessaires sur la page, comme les champs pour renseigner les variables ainsi que les informations sur les différentes politiques ajoutées.
+\subsubsection{L'application Numérobis}
+L'application interne de l'ATD 16, Numérobis, est un ERP (Enterprise Resource Planning), le choix du développement d'une application web interne a été conditionné par la complexité du système tarifaire de l'ATD.
 
-\subsection{L'API Numérobis}
-Le back-end du site est une API Rest, développée avec Symfony et API Platform. Afin de développer le simulateur, j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API Platform. Cette période de compréhension du projet a été grandement accélérée par le fait qu'au 3ème semestre j'avais réalisé un site en utilisant Symfony pour la SAE, j'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les contrôleurs et Doctrine* mais aussi plus globalement du langage PHP en lui-même.
+\subsection{Explication de la mission}
 
-Cependant, il fallait que je comprenne le fonctionnement d'API Platform, c'est un framework PHP basé sur Symfony, le site développé au 3ème semestre n'utilisait pas d'API, tout était fait dans le même projet, back et front. API Platform permet de créer des API REST avec Symfony. En créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des événements à ces routes comme "validate", ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il colle aux contraintes de la base de données. De plus, API Platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouver des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
+La mission principale de mon stage est donc la réalisation d'un simulateur de prix d'adhésions sur l'application Numérobis, site interne à l'ATD 16. Ce simulateur doit pouvoir donner un prix pour une structure adhérente, en tenant compte des variables renseignées. Une simulation existait déjà, mais elle se limitait à une seule nouvelle adhésion et ne prenait en compte que les variables déjà rentrées. Cette nouvelle version doit dépasser ces limites, il faut pouvoir calculer une ou plusieurs nouvelles adhésion pour une structure déjà adhérente mais aussi pouvoir simuler de zéro une adhésion d'une nouvelle structure. 
+
+Il y a cependant plusieurs contraintes :
+\begin{enumerate}
+    \item La surcotisation du multi-site doit donné seulement la valeur de la surcotisation (pas le total)
+    \item L'exception de réduction de prix du parcours cybersécurité quand il y a une souscription au RGPD
+    \item Le simulateur doit être utilisable sur mobile
+\end{enumerate}
+
+En résumé, il faut une page permettant de :
+\begin{enumerate}
+    \item Simuler une nouvelle adhésion en partant de zéro
+    \item Simuler une nouvelle adhésion en utilisant une structure déjà existante
+\end{enumerate}
+
+\subsection{Le Back-end}
+Le back-end* de l'application web est une API* Rest, développée avec Symfony et API platform. Afin de développer le simulateur, j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API platform. Cette période de compréhension du projet a été grandement accélérée par le fait qu'au 3ème semestre j'avais réalisé une application web en utilisant Symfony pour la SAE, j'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les contrôleurs et Doctrine\footnote{Outil facilitant la gestion de la base de données, grace au concept d'ORM (Object Relational Mapping) ca permet de ne pas écrire de SQL} mais aussi plus globalement du langage PHP en lui-même.
+
+Cependant, il fallait que je comprenne le fonctionnement d'API platform, c'est un framework* PHP basé sur Symfony, l'application développée au 3ème semestre n'utilisait pas d'API, tout était fait dans le même projet, back et front. API platform permet de créer des API* REST avec Symfony. En créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des événements à ces routes comme "validate", ce sont des services Symfony, ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il correspond aux contraintes de la base de données. De plus, API platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouver des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
 
 \begin{figure}[ht]
     \centering
@@ -177,9 +195,9 @@ Cependant, il fallait que je comprenne le fonctionnement d'API Platform, c'est u
 \end{figure}
 
 \subsection{Le controller simulateur}
-Afin de réaliser le back-end du simulateur, je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créé des groupes de dénormalisation, c'est en fait une annotation qui permet de dire à l'API les données attendues pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une structure, une adhésion et une année, il faut donc que le json envoyé dans le body de la requête contienne les éléments nécessaires à la création de ces trois objets.
+Afin de réaliser le back-end* du simulateur, je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créé des groupes de dénormalisation, c'est en fait une annotation qui permet de dire à l'API* les données attendues pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une structure, une adhésion et une année, il faut donc que le json envoyé dans le body de la requête contienne les éléments nécessaires à la création de ces trois objets.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{jsonSimu.png}
     \caption{Exemple de json pour le simulateur}
@@ -188,7 +206,7 @@ Afin de réaliser le back-end du simulateur, je me suis grandement inspiré de l
 
 On remarque donc ici que la Structure est imbriquée dans l'Adhésion, ces deux objets sont donc créés à la dénormalisation quand l'objet arrive avec la requête, on retrouve aussi dans ce json tous les champs du groupe de dénormalisation, et qui suffisent donc à créer les deux objets. L'objet Année est un objet qui existe déjà en base de données, on transmet donc ici seulement l'année, qui va nous permettre, grâce aux repository de Symfony, de récupérer l'objet Years correspondant. Voici un graphique expliquant les principes de sérialisation et déserialisation.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{SerializerWorkflow.png}
     \caption{La serialization}
@@ -199,7 +217,7 @@ Ensuite, il y a deux exceptions majeures dans le calcul, la première n'est pas 
 
 \subsubsection{Documentation}
 
-API Platform supporte nativement le format de documentation d'openAPI (anciennement Swagger), et donc cela crée une documentation à l'adresse \href{https://dev.api.numerobis.atd16.fr/api}{adresse-api/api}. Sur cette page, on retrouve donc la documentation de toutes les routes de l'API, avec une documentation par défaut pour les routes standards, cependant ma route n'est pas standard, et donc pour la documenter correctement, j'ai utilisé des DTO (Data Transfer Object). J'ai donc créé deux DTO, un "input" (entrée) et "output" (sortie), grâce au groupe de dénormalisation et au DTO, la documentation décrit parfaitement ce qui est nécessaire dans le body de la requête. Ces DTO décrivent donc ce qui est attendu en entrée et en sortie de la route.
+API platform supporte nativement le format de documentation d'openAPI* (anciennement Swagger), et donc cela crée une documentation à l'adresse \href{https://dev.API.numerobis.atd16.fr/API}{adresse-API/API}. Sur cette page, on retrouve donc la documentation de toutes les routes de l'API, avec une documentation par défaut pour les routes standards, cependant ma route n'est pas standard, et donc pour la documenter correctement, j'ai utilisé des DTO (Data Transfer Object). J'ai donc créé deux DTO, un "input" (entrée) et "output" (sortie), grâce au groupe de dénormalisation et au DTO, la documentation décrit parfaitement ce qui est nécessaire dans le body de la requête. Ces DTO décrivent donc ce qui est attendu en entrée et en sortie de la route.
 
 \begin{figure}[ht]
     \centering
@@ -208,21 +226,14 @@ API Platform supporte nativement le format de documentation d'openAPI (anciennem
     \label{fig:swagger-simulator-in}
 \end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.8]{docSimulatorOutput.png}
-    \caption{Documentation de la route API}
-    \label{fig:swagger-simulator-out}
-\end{figure}
 
 \subsubsection{Tests}
-Ayant écrit du code dans l'API, il faut bien évidemment le tester. J'ai donc créé une batterie de tests assurant une couverture de cas. Ce sont des tests fonctionnels, c'est-à-dire que l'on va tester les réponses de l'API. Dans les tests déjà écrits dans le projet, François LALAY utilise Zenstruck, qui permet de générer facilement des objets aléatoires pour le testing, mais aussi de réinitialiser la base de test entre chaque test, je l'ai donc aussi utilisé. J'ai donc testé mon contrôleur en lançant aussi la totalité des tests afin de vérifier si mes modifications n'ont pas cassé quelque chose autre part dans le code.
+Ayant écrit du code dans l'API, il faut bien évidemment le tester. J'ai donc créé une batterie de tests assurant une couverture de cas. Ce sont des tests fonctionnels, c'est-à-dire que l'on va tester le fonctionnement de l'API, est ce qu'elle renvoie les bonnes valeurs ou bien les erreurs dans les cas échéants. Dans les tests déjà écrits dans le projet, François LALAY utilise Zenstruck, qui permet de générer facilement des objets aléatoires pour le testing, mais aussi de réinitialiser la base de test entre chaque test, je l'ai donc aussi utilisé. J'ai donc testé mon contrôleur en lançant aussi la totalité des tests afin de vérifier si mes modifications n'ont pas cassé quelque chose autre part dans le code.
 
-\subsection{Le site Numérobis}
-Le site interne de l'ATD 16, Numérobis, est un ERP (Entreprise Resource Planning), le choix du développement d'un site interne a été conditionné par la complexité du système tarifaire de l'ATD.
+\subsection{Le Front-End}
 
 \subsubsection{Fonctionnement de React}
-React fonctionne sur le modèle d'un arbre, chaque composant possède des enfants qui peuvent être d'autres composants React ou bien du JSX (c'est le code qui ressemble à du HTML dans le retour des composants). Dans les composants rendus côté client, on peut utiliser des "hooks" react, ce sont des fonctions qui permettent de stocker des états ou encore d'utiliser le cycle de vie des composants. Par exemple "useState", ce hook permet de garder une valeur entre les différents cycles de vie, et donc chaque fois que cet état est mis à jour, le composant se rend à nouveau, ainsi que tous ses enfants. Afin d'optimiser les performances du site, il faut viser le minimum de rendu possible.
+React est tout d'abord une librairie Javascript, elle fonctionne sur le modèle d'un arbre, chaque composant possède des enfants qui peuvent être d'autres composants React ou bien du JSX (c'est le code qui ressemble à du HTML dans le retour des composants). L'affichage de ces composants s'appelle le rendu, quand un composant se rend, ca veut dire qu'il s'affiche à nouveau avec de nouvelles valeurs si besoin. Dans les composants rendus côté client, on peut utiliser des "hooks" react, ce sont des fonctions qui permettent de stocker des états ou encore d'utiliser le cycle de vie des composants. Par exemple "useState", ce hook permet de garder une valeur entre les différents cycles de vie, et donc chaque fois que cet état est mis à jour, le composant se rend à nouveau, ainsi que tous ses enfants. Afin d'optimiser les performances de l'application web, il faut viser le minimum de rendu possible.
 
 \subsubsection{Le simulateur}
 
@@ -243,7 +254,7 @@ La liste des adhésions, c'est l'endroit où on affiche la liste qui contient le
     \label{fig:list-adhe}
 \end{figure}
 
-\vspace{2em}
+\vspace{1em}
 
 Le composant de détail consiste essentiellement en un groupe de checkbox pour choisir les formules. À l'origine, les formules étaient récupérées par un appel API, mais par souci d'optimisation, j'injecte désormais dans le composant les formules à afficher, ce qui réduit le nombre d'appels à l'API. Ce composant apparaît aussi dans une modale quand on sélectionne une nouvelle politique, ce qui permet de faire disparaître l'affichage classique de ce composant pour la vue mobile.
 
@@ -263,7 +274,7 @@ Le composant d'import ne comporte visuellement qu'une seule chose, la barre de r
     \label{fig:import-struc}
 \end{figure}
 
-Ce composant est une liste d'"input controllés", un input controllé en React, c'est un input où l'on va stocker sa valeur à chaque modification, pas de bouton de validation, ça permet de tout le temps connaître la valeur de l'input. Ici, c'est une liste d'input contrôle, c'est-à-dire qu'avec un seul "useState" on garde la trace de toutes les variables. La liste de variables est quant à elle récupérée par un appel API au chargement de la page.
+Ce composant est une liste d'"input contrôlés", un input contrôlé en React, c'est un input où l'on va stocker sa valeur à chaque modification, pas de bouton de validation, ça permet de tout le temps connaître la valeur de l'input. Ici, c'est une liste d'input contrôle, c'est-à-dire qu'avec un seul "useState" on garde la trace de toutes les variables. La liste de variables est quant à elle récupérée par un appel API* au chargement de la page.
 
 \begin{figure}[H]
     \centering
@@ -272,16 +283,18 @@ Ce composant est une liste d'"input controllés", un input controllé en React, 
     \label{fig:adhe-var}
 \end{figure}
 
-Comme expliqué précédemment, la vue mobile faisait partie des demandes dès le début du développement. La question de la vue mobile tombe plutôt dans le domaine du CSS que du React, même si quelques changements ont été nécessaires de côté, comme la création des deux modalités de détail et d'import. Après avoir discuté avec mon maître de stage du design mobile, il m'a fait remarquer que dans la plupart des applications, notamment de scroll comme TikTok et Instagram réels, ont les actions placées sur le côté droit et en bas, les zones d'accessibilité du pouce.
+Comme expliqué précédemment, la vue mobile faisait partie des demandes dès le début du développement. La question de la vue mobile tombe plutôt dans le domaine du CSS que du React, même si quelques changements ont été nécessaires de ce côté, comme la création des deux modales de détail et d'import. Après avoir discuté avec mon maître de stage du design mobile, il m'a fait remarquer que dans la plupart des applications, notamment de scroll comme TikTok et Instagram réels, ont les actions placées sur le côté droit et en bas, les zones d'accessibilité du pouce.
 
-Tailwind CSS possède un système très intéressant d'application conditionnelle des classes à certains paliers, par exemple avec le tag "md:" précédent une classe, celle-ci devient effective qu'à partir d'un affichage d'une largeur minimum de 768 pixels. Comme expliqué dans la documentation de Tailwind, ces paliers s'activent quand l'écran est supérieur à la largeur, il faut donc comprendre que l'affichage mobile doit être développé en premier, car on changera le comportement avec les marqueurs pour les écrans plus grands. Cependant, le site Numérobis n'a pas été pensé pour le mobile, et moi-même, m'y étant intéressé qu'une fois le simulateur fonctionnel, j'ai dû réécrire les classes Tailwind avec en configuration par défaut le mobile, et l'affichage bureau derrière des tags "md:". Ici, on a un contenant flex, avec une disposiion en colonne pour la vue mobile (flex-col) puis en ligne si affichage plus large (md:flex-row).
+Tailwind CSS utilise un système de breakpoints\footnote{Ce sont des valeurs qui, quand elle sont dépassées, déclenchent quelque chose}, par exemple avec le tag "md:" précédent une classe, celle-ci devient effective qu'à partir d'un affichage d'une largeur minimum de 768 pixels. Comme expliqué dans la documentation de Tailwind, ces paliers s'activent quand l'écran est supérieur à la largeur, il faut donc comprendre que l'affichage mobile doit être développé en premier, car on changera le comportement avec les marqueurs pour les écrans plus grands. Cependant, l'application Numérobis n'a pas été développée pour le mobile, et moi-même, m'y étant intéressé qu'une fois le simulateur fonctionnel, j'ai dû réécrire les classes Tailwind avec en configuration par défaut le mobile, et l'affichage bureau derrière des tags "md:". Ici, on a un contenant flex, avec une disposition en colonne pour la vue mobile (flex-col) puis en ligne si affichage plus large (md:flex-row).
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.8]{responsive.png}
-    \caption{Exemple de responsive}
-    \label{fig:responsive}
-\end{figure}
+
+\begin{verbatim}
+<div className="flex H-full flex-col gap-2 md:flex-row">
+    <p> Hello <p>
+    <p> World <p>
+</div>
+\end{verbatim}
+
 
 J'ai donc transformé les boutons d'actions à gauche de la liste d'adhésions en une barre d'actions qui reste en bas de l'écran, et ajouté un bouton "importé" qui permet d'afficher une modale avec le composant d'import de structure. J'ai aussi inversé l'affichage des prix et du nom dans la liste des adhésions afin d'avoir la zone cliquable à droite.
 
@@ -293,7 +306,7 @@ J'ai donc transformé les boutons d'actions à gauche de la liste d'adhésions e
 \end{figure}
 
 
-\section{Refactoring avec Zustand}
+\section{Refactoring* avec Zustand}
 Dans la première version du simulateur, j'ai utilisé les contextes de React pour pouvoir transmettre des infos en profondeur dans l'arbre React et aussi pour les modifier. Les contextes permettent d'éviter de faire des cascades de props*.
 
 \begin{figure}[H]
@@ -303,7 +316,7 @@ Dans la première version du simulateur, j'ai utilisé les contextes de React po
     \label{fig:context-react}
 \end{figure}
 
-Ils fonctionnent sur le principe suivant, dans un composant parent, on crée un contexte et un état avec "useState", puis dans le "return" du composant, on crée un "Provider" du contexte avec en valeur juste la valeur de l'état pour de la lecture seule, ou bie un objet avec la valeur de l'état ainsi que la fonction de modification si on souhaite le modifier plus bas dans l'arbre.
+Ils fonctionnent sur le principe suivant, dans un composant parent, on crée un contexte et un état avec "userState", puis dans le "return" du composant, on crée un "Provider" du contexte avec en valeur juste la valeur de l'état pour de la lecture seule, ou bien un objet avec la valeur de l'état ainsi que la fonction de modification si on souhaite le modifier plus bas dans l'arbre.
 
 Dans le simulateur, j'ai eu besoin de transmettre beaucoup d'informations dans les composants, je me suis donc très vite retrouvé avec beaucoup de contextes et de providers dans la section de ma page. Ce qui rend, d'une, le code très peu lisible, car tous les états sont créés dans ce composant et de deux un souci d'optimisation, comme expliqué précédemment, lorsqu'un état change, le composant se rend à nouveau ainsi que tous ses enfants, combiné ça avec plusieurs contextes qui peuvent être modifiés et on obtient une page qui se rend entièrement à chaque modification.
 
@@ -314,7 +327,7 @@ Dans le simulateur, j'ai eu besoin de transmettre beaucoup d'informations dans l
     \label{fig:provider-hell}
 \end{figure}
 
-Dans un premier temps, j'avais déplacé la création des états et des contextes dans des composants à part, afin d'améliorer la lisibilité, mais cela ne règle pas les problèmes d'optimisation. Mon tuteur, François LALAY, m'a orienté vers une libraire qu'il utilise dans le site Numérobis, Zustand. Zustand permet de créer un "store", qui va stocker les données que l'on veut partager entre différents composants. Ce store est indépendant de React, les composants vont donc pouvoir interagir avec pour récupérer les infos nécessaires. De plus, grâce aux sélecteurs de Zustand, seulement sont mis à jour les composants qui utilisent une valeur du store qui a été modifiée, ce qui réduit grandement le nombre de rendus. On retrouve donc dans ce store les données stockées ainsi que les méthodes de modification, cependant, tout comme les états React, les valeurs sont immutables, c'est-à-dire qu'on va "remplacer" par la nouvelle valeur, plutôt que de modifier l'ancienne.
+Dans un premier temps, j'avais déplacé la création des états et des contextes dans des composants à part, afin d'améliorer la lisibilité, mais cela ne règle pas les problèmes d'optimisation. Mon tuteur, François LALAY, m'a orienté vers une libraire qu'il utilise dans l'application Numérobis, Zustand. Zustand est une librairie de state management pour React, ça permet de créer un "store", qui va stocker les données que l'on veut partager entre différents composants. Ce store est indépendant de React, les composants vont donc pouvoir interagir avec pour récupérer les infos nécessaires. De plus, grâce aux sélecteurs de Zustand, seulement sont mis à jour les composants qui utilisent une valeur du store qui a été modifiée, ce qui réduit grandement le nombre de rendus. On retrouve donc dans ce store les données stockées ainsi que les méthodes de modification, cependant, tout comme les états React, les valeurs sont immutables, c'est-à-dire qu'on va "remplacer" par la nouvelle valeur, plutôt que de modifier l'ancienne.
 
 \begin{figure}[H]
     \centering
@@ -326,7 +339,7 @@ Dans un premier temps, j'avais déplacé la création des états et des contexte
 Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique. Maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page.
 
 \section{Autres petites missions}
-Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions. La première fut de développer une vue mobile utile pour la globalité du site. J'ai donc commencé par modifier le layout principal, ce layout toujours présent est en deux parties, une barre de navigation latérale et un header. Évidemment, ce type de layout n'est pas adapté à une vue mobile, cependant j'avais pour consigne de ne pas modifier la vue bureau. J'ai donc utilisé les tags Tailwind, j'ai fait le choix d'intégrer la barre de navigation dans un popover, élément s'affichant au-dessus du contenu, qui s'affiche en cliquant sur un bouton ajouté au header.
+Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions. La première fut de développer une vue mobile utile pour la globalité de l'application web. Une première contrainte était que je ne pouvais pas modifier la vue bureau, et donc seulement la vue mobile, de plus Numérobis n'a pas été pensé pour une utilisation sur téléphone. J'ai donc commencé par adapter le layout principal, ce layout toujours présent est en deux parties, une barre de navigation latérale et un header. Évidemment, ce type de layout n'est pas adapté à une vue mobile. J'ai donc utilisé les breakpoints Tailwind, j'ai fait le choix d'intégrer la barre de navigation dans un popover, élément s'affichant au-dessus du contenu, qui s'affiche en cliquant sur un bouton ajouté au header.
 
 \begin{figure}[H]
     \centering
@@ -335,12 +348,13 @@ Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres
     \label{fig:header-mob}
 \end{figure}
 
-Le header a une position "sticky", c'est-à-dire que l'élément est dans le flux normal du document, mais ici si l'on scroll, le header devient fixe en haut de la fenêtre. J'ai aussi dû réduire le nombre d'informations comparé au header de la vue bureau afin que tout loge dans la largeur d'un mobile.
-J'ai aussi rapidement refait la disposition des différentes pages en mobile, de manière à ce qu'elles soient consultables même si très peu, voire pas du tout, utilisées sur mobile.
+Afin de toujours avoir le header accessible en vue mobile j'ai utilisé la position "sticky", c'est-à-dire que l'élément est dans le flux normal du document, mais si l'on scroll, le header devient fixe en haut de la fenêtre, cela permet de garder le header en haut de page dans la vue bureau, mais aussi de toujours l'avoir en haut de l'écran quand on scroll sur mobile. J'ai aussi dû réduire le nombre d'informations comparé au header de la vue bureau afin que tout loge dans la largeur d'un mobile.
+
+J'ai ensuite adapté la disposition des différentes pages en mobile, de manière à ce qu'elles soient consultables. 
 
 \vspace{1em}
 
-Ma deuxième mission secondaire a été l'implémentation d'un mode sombre. Tailwind le permet facilement à l'aide du tag "dark:". Ce tag active la classe derrière les deux points, quand la classe "dark" se trouve plus haut dans l'arbre HTML, c'est le même fonctionnement que pour le design responsive. Cependant, cette méthode nécessite d'écrire explicitement chaque changement du mode sombre dans tous les composants, faisable en cours de développement mais terriblement long sur un projet entier où ça n'a jamais été fait. J'ai donc fait des recherches afin de trouver une solution, le fichier de configuration de Tailwind est le fichier où l'on va pouvir enregistré par exemple les couleurs que l'on va utilisé dans le site, François LALAY à choisis sa palette de couleur avec Radix UI, site qui propose des progressions de couleurs qui ont été étudié afin d'optimisé l'accessibilité. Ces progressions comportent une dizaine de couleur, partant des couleurs de fond jusqu'aux couleurs de textes. Radix Ui donnent aussi la version mode sombre de chaque gamme, facilitant son développement.
+Ma deuxième mission secondaire a été l'implémentation d'un mode sombre. Tailwind le permet facilement à l'aide du tag "dark:". Ce tag active la classe derrière les deux points, quand la classe "dark" se trouve plus haut dans l'arbre HTML, c'est le même fonctionnement que pour le design responsive. Cependant, cette méthode nécessite d'écrire explicitement chaque changement du mode sombre dans tous les composants, faisable en cours de développement mais terriblement long sur un projet où ça n'a pas été fait. J'ai donc fait des recherches afin de trouver une solution, le fichier de configuration de Tailwind est le fichier où l'on va pouvir enregistré par exemple les couleurs que l'on va utilisé dans l'application, François LALAY à choisis sa palette de couleur avec Radix UI, site qui propose des progressions de couleurs qui ont été étudié afin d'optimisé l'accessibilité, critères absolument vital pour un site car cela fait partis des choses regardé par google pour le référencement du site. Ces progressions comportent une dizaine de couleur, partant des couleurs de fond jusqu'aux couleurs de textes. Radix Ui donnent aussi la version mode sombre de chaque gamme, facilitant son développement.
 
 \begin{figure}[H]
     \centering
@@ -358,6 +372,14 @@ Après quelques recherches, j'ai trouvé la solution. Il faut définir des varia
     \label{fig:dark-mode}
 \end{figure}
 
+Une fois cette solution implémenté j'ai découvert un autre problème, Tailwind permet de modifier l'opacité de la couleur d'un composant simplement avec un "/50" à la suite de la couleur par exemple, cette annotation dit que l'opacité de la couleur est à 50\%. Ce système fonctionne avec Tailwind car les couleurs du framework sont au format rgba (Red Green Blue Alpha), l'Alpha définit l'opacité, cependant dans mon implémentation des thèmes les couleurs sont en hexadécimal. Il a donc fallu convertir toutes les couleurs de hexadécimal à RGB, puis dans la config Tailwind ajouter "/ <alpha-value>" pour expliciter qu'on attend une valeur d'opacité (mise à 1 (100\%) par défaut). Grâce à ce changement on peut donc utiliser les annotations d'opacité.
+
+\begin{verbatim}
+primary: {
+        50: "rgb(var(--color-primary-50) / <alpha-value>)",
+}
+\end{verbatim}
+
 \chapter{Conclusion}
 
 Ce stage de 10 semaines à l'Agence Technique de la Charente m'aura permis d'avoir une expérience intéressante et surtout enrichissante, sur le plan professionnel principalement, car même si le penchant technique est très formateur, c'est surtout sur le plan professionnel que je pense avoir le plus progressé. Que ce soit la communication avec les utilisateurs, la gestion de projet, les réunions, c'est le genre de choses que l'on a du mal à évaluer l'importance au début en tant qu'étudiant.
@@ -368,9 +390,42 @@ Sur le plan technique, le fait de m'être obligé de moins utiliser l'IA m'a fai
 
 \vspace{1em}
 
-Le développement du simulateur fut un projet très enrichissant pour moi, le fait de toucher au back-end aussi bien qu'au front-end me permet de mieux comprendre l'architecture d'une application fonctionnant avec une API Rest, le processus de sérialisation, désérialisation. Mais aussi, de par la complexité de la grille tarifaire et le fait que ce soit un projet qui va être utilisé et non universitaire, j'ai dû apprendre à comprendre les demandes des clients/utilisateurs du site et donc m'adapter à ce qu'ils veulent.
+Le développement du simulateur fut un projet très enrichissant pour moi, le fait de toucher au back-end* aussi bien qu'au front-end* me permet de mieux comprendre l'architecture d'une application fonctionnant avec une API* Rest, le processus de sérialisation, désérialisation. Mais aussi, de par la complexité de la grille tarifaire et le fait que ce soit un projet qui va être utilisé et non universitaire, j'ai dû apprendre à comprendre les demandes des clients/utilisateurs de l'application web et donc m'adapter à ce qu'ils veulent.
 
 \vspace{1em}
 
-Je reste évidemment conscient que le simulateur est certainement perfectible, mais je suis cependant très fier de ce projet, mon plus long à ce jour, et ce même si avant ce stage, le développement web, notamment front-end, je n'appréciais pas particulièrement cela. Ce stage m'a fait redécouvrir le développement web, que j'apprécie bien plus maintenant.
+Je suis conscient que le simulateur est perfectible, mais je suis cependant très fier de ce projet, mon plus long à ce jour, et ce même si avant ce stage, le développement web, notamment front-end*, je n'appréciais pas particulièrement cela. Ce stage m'a fait apprécier le web, que je comprends aussi beaucoup mieux maintenant.
+
+\chapter{Sources}
+Toutes les sources en lignes ont été consultées en Juin 2025
+
+\begin{enumerate}
+    \item Documentation PHP : \url{https://www.php.net/manual/en/}
+    \item Documentation Symfony : \url{https://symfony.com/doc/current/index.html}
+    \item Documentation API platform Symfony : \url{https://API platform.com/docs/symfony/}
+    \item Documentation Doctrine : \url{https://www.doctrine-project.org/projects/doctrine-orm/en/3.3/index.html}
+    \item Documentation PHPUnit (Tests) : \url{https://docs.phpunit.de/en/9.6/}
+    \item Documentation Zenstruck : \url{https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html}
+    \item Documentation MDN : \url{https://developer.mozilla.org/fr/}
+    \item Documentation Next.js : \url{https://nextjs.org/docs/app/getting-started}
+    \item Documentation React : \url{https://fr.react.dev/reference/react}
+    \item Documentation Tailwind CSS : \url{https://v3.tailwindcss.com/docs/installation}
+    \item Stackoverflow forum : \url{https://stackoverflow.com/questions}
+    \item Chat GPT : \url{https://chatgpt.com/}
+\end{enumerate}
+
+\chapter{Glossaire}
+\begin{enumerate}
+    \item framework : Ensemble d'outils, de composants et de règles qui facilite et structure le développement d'un logiciel ou d'une application. Il sert de cadre de travail.
+    \item front-end : Partie visible d'un site web ou d'une application avec laquelle l'utilisateur interagit.
+    \item back-end : Partie d'un site web ou d'une application qui gère la logique, les données et la communication avec le serveur. Elle n'est pas visible par l'utilisateur et fonctionne en arrière-plan.
+    \item API (Interface de Programmation d’Application) : Ensemble de règles qui permet à différents logiciels de communiquer entre eux. Elle définit comment envoyer des demandes et recevoir des réponses. 
+    \item API REST : Type d’API qui suit les principes du style REST (Representational State Transfer). Elle utilise principalement le protocole HTTP pour permettre l’échange de données entre un client et un serveur.
+    \item Refactoring : Action de modifier le code d’un programme pour le rendre plus clair, plus propre ou plus efficace, sans en changer le fonctionnement.
+\end{enumerate}
+
+\chapter{Annexes}
+Voir PDF joint
+
 \end{document}
+
