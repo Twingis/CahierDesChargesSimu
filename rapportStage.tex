@@ -27,15 +27,51 @@
     BUT Informatique
     
 }
+\fancyhead[R]{
+    \includegraphics[height=1.2cm]{images_rapport/logoIUT.jpg}
+}
 \fancyfoot[C]{\thepage}
 
-\title{Rapport de Stage}
-\author{Loris DROUHOT}
-\date{\today}
+
+
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    % En-tête avec logos
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=0.9\textwidth]{images_rapport/logoIUT.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \flushright
+        \includegraphics[width=0.9\textwidth]{images_rapport/logo-atd@3x.png}
+    \end{minipage}
+
+    \vspace{3cm}
+
+    \centering
+    {\Huge \textbf{Rapport de Stage} \par}
+    \vspace{0.5em}
+    {\small Du 22/04/2025 au 27/06/2025}
+    \vspace{1.5cm}
+
+    {\Large \textbf{Loris DROUHOT} \par}
+    \vspace{0.5cm}
+    {\large Pôle Numérique - Cellule d'Expertise Numérique - Équipe projet Numérobis \par}
+
+    {\large BUT Informatique – 2eme année \par}
+    {\large IUT de Nantes\par}
+    \vspace{2cm}
+
+    \vfill
+    {\large Tuteur de stage : LALAY François \par}
+    {\large Enseignant référent : FAUCOU Sébastien \par}
+    \vspace{1em}
+    {\large Année Universitaire : 2024/2025 \par}
+    
+\end{titlepage}
+
 \newpage
 \thispagestyle{empty}
 
@@ -91,7 +127,7 @@ mais avec des réunions seulement deux fois par semaine du fait que François LA
 
 \vspace{1em}
 
-Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents langages de programmation. Le concept le plus important quand j'ai travaillé sur la partie back-end* de ma mission a été la sérialisation et donc aussi la désérialisation, ce sont les processus centraux du fonctionnement d'une API* Rest. Ce sont eux qui assurent que les données soient converties au bon format pour l'envoi, puis convertissent les données reçues au format du langage utilisé. Ces concepts sont intégrés à Symfony et API Platform nativement, il suffit de bien les utiliser. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisés, comme le type verbe\footnote{Les verbes HTTP sont GET, POST, PUT et DELETE} HTTP de la route API, les différents événements attachés à ces routes. Pour la partie front-end*, la théorie est moins présente car les données et l'application sont spécifiques, j'ai donc été amené à utiliser des outils propres aux frameworks* avec lesquels on travaille, comme les hooks React ou les stores Zustand.
+Dans le but de compléter la mission qui m'a été confiée, j'ai utilisé de nombreux outils, allant de la connaissance théorique aux documentations des différents langages de programmation. Le concept le plus important quand j'ai travaillé sur la partie back-end* de ma mission a été la sérialisation et donc aussi la désérialisation, ce sont les processus centraux du fonctionnement d'une API* Rest. Ce sont eux qui assurent que les données soient converties au bon format pour l'envoi, puis convertissent les données reçues au format du langage utilisé. Ces concepts sont intégrés à Symfony et API Platform nativement, il suffit de bien les utiliser. Il m'a aussi fallu me pencher sur d'autres concepts plus spécifiques aux outils utilisés, comme le type de verbe\footnote{Les verbes HTTP sont GET, POST, PUT et DELETE (il existe aussi OPTIONS et PATCH)} HTTP de la route API, les différents événements attachés à ces routes. Pour la partie front-end*, la théorie est moins présente car les données et l'application sont spécifiques, j'ai donc été amené à utiliser des outils propres aux frameworks* avec lesquels on travaille, comme les hooks React ou les stores Zustand.
 
 \vspace{1em}
 
@@ -107,7 +143,7 @@ Dans une seconde partie, je parlerai des outils qui m'ont été utiles, la réal
 \chapter{Développement}
 
 \section{L'Agence Technique Départementale de la Charente}
-L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO (Assistance à Maîtrise d'Ouvrage) et du juridique, puis a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente. Pour l'organigramme structurel voir annexe
+L'Agence Technique Départementale de la Charente est un service public. Fondée en 2014, elle regroupait déjà les compétences de l'AMO (Assistance à Maîtrise d'Ouvrage) et du juridique, puis a intégré les compétences du SDITEC (numérique et cartographique) en 2018. L'agence propose un nombre conséquent de compétences permettant d'aider, de conseiller ou d'assister les différentes collectivités territoriales de Charente. Pour l'organigramme structurel voir annexe 3
 
 
 M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisation des moyens des collectivités, chaque collectivité n'a pas forcément les moyens de payer des agents pouvant réaliser tout genre de tâches, qu'elles soient numériques, juridiques ou cartographiques. C'est là où l'ATD 16 prend tout son intérêt, elle permet de centraliser toutes compétences (Aménagement, Numérique, Juridique et Cartographique) au sein d'un seul service public, auquel les collectivités peuvent demander de l'aide, à condition d'adhérer aux politiques adéquates.
@@ -116,7 +152,7 @@ M. Ronan MÉVELLEC, directeur et fondateur, explique cela comme une mutualisatio
 
 Étant un service publique, l'argent injecté et récolté est surveillé de près, c'est pourquoi il y a un Conseil d'Administration, présidé par M. Michel CARTERET, ce conseil prend les décisions pour l'ATD, qu'elles soient budgétaires, salariales ou toutes autres choses. Ce conseil est composé de représentants des adhérents à l'ATD 16. Monsieur le directeur ne peut qu'appliquer les décisions du conseil, néanmoins la plupart des idées sont suggérées par l'ATD puis validées par le conseil.
 
-L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit de souscrire aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général au nombre d'habitants. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux "boîtes de messagerie" ou encore la voirie pour l'entretien des routes. Pour les détails de la grille tarifaire voire annexe.
+L'ATD 16 fonctionne sur un modèle de volets principaux, d'adhésions optionnelles et d'appuis ponctuels. En premier lieu, l'ATD propose deux volets principaux, le volet AMO, incluant l'assistance à maîtrise d'ouvrage et l'assistance juridique, et le volet Numérique, incluant la maintenance du parc informatique, l'administration numérique, un système de convocations électroniques et un profil acheteur sur les marchés publics. Une fois adhérents à l'un ou les deux volets, les collectivités ont le droit de souscrire aux adhésions optionnelles, comptant par exemple l'entretien de la voirie, le RGPD, un parcours cybersécurité, l'assistance sur logiciels métiers, ou encore la mise à disposition de logiciels de cartographie permettant plein de choses comme la gestion des cimetières par exemple. Un adhérent peut cumuler autant d'adhésions optionnelles qu'il le souhaite, le prix des volets et des adhésions optionnelles est calculé en général au nombre d'habitants. Il existe d'autres variables comme le nombre de boîtes de messagerie pour l'adhésion aux "boîtes de messagerie" ou encore la voirie pour l'entretien des routes. Pour les détails de la grille tarifaire voire annexe 2, pour voir l'ensemble des politiques voire annexe 1.
 
 Enfin, l'ATD propose aussi des appuis ponctuels : services rendus irrégulièrement sur demande d'une collectivité ; il peut s'agir de suivi d'opérations après la mise en route d'un projet par l'AMO, de prêt de matériel, ou encore d'adressage pour les communes. Il existe plusieurs types de collectivités territoriales pouvant accéder aux services de l'ATD 16, la majorité sont des communes, mais il y a aussi des communautés de communes, des syndicats ou encore le département lui-même.
 
@@ -136,7 +172,7 @@ Git est certainement le software le plus important dans le monde de l'informatiq
 Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API* et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Pour développer, je crée une nouvelle branche à partir de develop, puis commit des modifications au fur et à mesure. Une fois satisfait de mon code je le push sur la branche distante, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement, ceci est donc le workflow\footnote{Le workflow c'est une suite de tâches} de développement.
 
 \subsection{Gestion de Projet}
-Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je développais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges fonctionnel, qui devait présenter ma vision du projet, que j'ai partagé lors de ma première réunion hebdomadaire avec l'équipe proejt Numérobis. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec l'équipe projet Numérobis, composée de :
+Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je développais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges fonctionnel (annexe 4), qui devait présenter ma vision du projet, que j'ai partagé lors de ma première réunion hebdomadaire avec l'équipe proejt Numérobis. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec l'équipe projet Numérobis, composée de :
 \begin{itemize}
     \item Lionel CLERCQ, Responsable du pôle numérique
     \item Charlotte CIARDULLI, chargée du support administration numérique et logiciels métiers
@@ -198,7 +234,7 @@ Cependant, il fallait que je comprenne le fonctionnement d'API platform, c'est u
     \label{fig:hyda-json}
 \end{figure}
 
-\subsection{Le controller simulateur}
+\subsection{Le controller du simulateur}
 Afin de réaliser le back-end* du simulateur, je me suis grandement inspiré de la route de simulation déjà existante. En premier lieu j'ai analysé les paramètres nécessaires au calcul, puis j'ai créé des groupes de dénormalisation, c'est en fait une annotation qui permet de dire à l'API* les données attendues pour la route POST. Ensuite, la fonction de calcul des prix a besoin de trois paramètres, une structure, une adhésion et une année, il faut donc que le json envoyé dans le body de la requête contienne les éléments nécessaires à la création de ces trois objets.
 
 \begin{figure}[H]
@@ -222,7 +258,7 @@ Ensuite, il y a deux exceptions majeures dans le calcul :
     \item La politique de maintenance de parc informatique multi-site est une augmentation de 25\% du prix du volet numérique, il faut donc en plus de la formule multi-site, les formules du volet numérique, puis calculer leur prix, puis recalculer avec le multi-site afin d'obtenir le prix d'augmentation causé par le multi-site.
     \item La deuxième arrive dans le cadre de la politique "Parcours cybersécurité", si l'adhérent adhère déjà à la politique RGPD alors le prix de la politique est réduit de 30\% supplémentaire, et donc pour gérer cette exception, le json possède un champ "adheringRgpd", qui donne l'information sur si cette structure adhère ou pas au RGPD. si c'est le cas, alors le controller ajoute la formule de RGPD avant le calcul, grâce au repository de Symfony, afin que la formule de calcul le prenne en compte
 \end{itemize} 
-Afin de toujours avoir l'information sur l'ID des formules problématiques, leur ID est stocké dans un fichier .ENV, qui n'est pas sauvegardé sur Git, mais qui évite ces "nombres magiques". Il y a juste à changer l'ID dans le fichier .ENV et tous les endroits où c'est importé récupèrent alors le nouvel ID.
+Afin de toujours avoir l'information sur l'ID des formules problématiques, leur ID est stocké dans un fichier .ENV, qui n'est pas sauvegardé sur Git, mais qui évite ces "nombres magiques". Il y a juste à changer l'ID dans le fichier .ENV et tous les endroits où c'est importé récupèrent alors le nouvel ID. Pour le code voire annexe 6.8 .
 
 \subsubsection{Documentation}
 
@@ -237,7 +273,7 @@ API platform supporte nativement le format de documentation d'openAPI* (ancienne
 
 
 \subsubsection{Tests}
-Ayant écrit du code dans l'API, il faut bien évidemment le tester. J'ai donc créé une batterie de tests assurant une couverture de cas. Ce sont des tests fonctionnels, c'est-à-dire que l'on va tester le fonctionnement de l'API, afin de savoir si elle renvoie les bonnes valeurs ou bien les erreurs dans les cas échéants. Dans les tests déjà écrits dans le projet, François LALAY utilise Zenstruck, qui permet de générer facilement des objets aléatoires pour le testing, mais aussi de réinitialiser la base de test entre chaque test, je l'ai donc aussi utilisé. J'ai donc testé mon contrôleur en lançant aussi la totalité des tests afin de vérifier si mes modifications n'ont pas cassé quelque chose autre part dans le code.
+Ayant écrit du code dans l'API, il faut bien évidemment le tester (exemple de test annexe 6.9). J'ai donc créé une batterie de tests assurant une couverture de cas. Ce sont des tests fonctionnels, c'est-à-dire que l'on va tester le fonctionnement de l'API, afin de savoir si elle renvoie les bonnes valeurs ou bien les erreurs dans les cas échéants. Dans les tests déjà écrits dans le projet, François LALAY utilise Zenstruck, qui permet de générer facilement des objets aléatoires pour le testing, mais aussi de réinitialiser la base de test entre chaque test, je l'ai donc aussi utilisé. J'ai donc testé mon contrôleur en lançant aussi la totalité des tests afin de vérifier si mes modifications n'ont pas cassé quelque chose autre part dans le code.
 
 \subsection{Le Front-End}
 
@@ -246,7 +282,7 @@ React est tout d'abord une librairie Javascript, elle fonctionne sur le modèle 
 
 \subsubsection{Le simulateur}
 
-Le simulateur se découpe en cinq zones majeures : un header, la liste des adhésions, le détail de l'adhésion sélectionné, l'importation d'une structure ainsi que les variables d'adhésions.
+Le simulateur se découpe en cinq zones majeures : un header, la liste des adhésions, le détail de l'adhésion sélectionné, l'importation d'une structure ainsi que les variables d'adhésions. Ces zones sont appelées "Cards", chaque card comporte des composant enfant affichant les informations (Annexe 6.6 : les fichiers du simulateur front-end).
 
 \vspace{1em}
 
@@ -309,7 +345,7 @@ J'ai donc transformé les boutons d'actions à gauche de la liste d'adhésions e
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{vueMobile.png}
+    \includegraphics[scale=0.3]{vueMobile.png}
     \caption{Vue mobile}
     \label{fig:mobile-view}
 \end{figure}
@@ -345,7 +381,7 @@ Dans un premier temps, j'avais déplacé la création des états et des contexte
     \label{fig:store-zustand}
 \end{figure}
 
-Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique. Maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page.
+Le deuxième point important que m'a permis de faire Zustand, c'est la refactorisation de mon code. Du fait d'avoir déplacé les données de mon composant section au store, j'ai pu mieux isoler les logiques de chaque composant. Le fait de tout traiter dans la section m'avait contraint à y centraliser la logique. Maintenant, la logique est séparée et donc plus lisible et compréhensible pour chaque composant. Par exemple, à la fin du développement de la première version, donc avec les contextes et sans aucun refactoring, le fichier de la section de la page a atteint environ 350 lignes de codes, maintenant ce fichier ne fait que 21 lignes, car plus aucune logique ne s'y trouve, j'y organise simplement la disposition de la page (voire annexe 6.10).
 
 \section{Autres petites missions}
 Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres petites missions. La première fut de développer une vue mobile utile pour la globalité de l'application web. Une première contrainte était que je ne pouvais pas modifier la vue bureau, et donc seulement la vue mobile. De plus Numérobis n'a pas été pensé pour une utilisation sur téléphone. J'ai donc commencé par adapter le layout principal, ce layout toujours présent est en deux parties, une barre de navigation latérale et un header. Évidemment, ce type de layout n'est pas adapté à une vue mobile. J'ai donc utilisé les breakpoints Tailwind, j'ai fait le choix d'intégrer la barre de navigation dans un popover, élément s'affichant au-dessus du contenu, qui s'affiche en cliquant sur un bouton ajouté au header.
@@ -399,8 +435,6 @@ Sur le plan technique, le fait de m'être obligé à moins utiliser l'IA m'a fai
 
 \vspace{1em}
 
-Le développement du simulateur fut un projet très enrichissant pour moi. Le fait de toucher au back-end* aussi bien qu'au front-end* me permet de mieux comprendre l'architecture d'une application fonctionnant avec une API* Rest. Mais aussi, de par la complexité de la grille tarifaire et le fait que ce soit un projet qui va être utilisé et non universitaire, j'ai dû apprendre à comprendre les demandes des clients/utilisateurs de l'application web et donc m'adapter à ce qu'ils veulent.
-
 Ce projet fut très formateur et enrichissant. Le fait de développer en front-end ainsi qu'en back-end m'a permis de mieux comprendre le fonctionnement d'un site web qui utilise une API. J'ajouterai que le fait de développer un projet qui va être utilisé oblige à se confronter aux utilisateurs et de comprendre leurs besoins.
 
 \vspace{1em}
@@ -436,7 +470,74 @@ Toutes les sources en lignes ont été consultées en Juin 2025
 \end{enumerate}
 
 \chapter{Annexes}
-Voir PDF joint
+\newpage
+\section{Annexe 1 : Les politiques de l'ATD 16}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.4]{images_rapport/2024-Bareme-1_page-0001.jpg}
+    \caption{Les politiques}
+    \label{fig:politiques}
+\end{figure}
+\section{Annexe 2 : Grille tarifaire}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.4]{images_rapport/ilovepdf_split/2024-Bareme-2.pdf}
+    \caption{La grille tarifaire}
+    \label{fig:grille-tarif}
+\end{figure}
+\section{Annexe 3 : L'organigramme de l'ATD 16}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.6]{images_rapport/Diapositive8.jpg}
+    \caption{Organigramme}
+    \label{fig:organigramme}
+\end{figure}
+\section{Annexe 4 : Mon cahier des charges}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{cahier_des_charges.pdf}
+    \caption{Mon cahier des charges}
+    \label{fig:cahier-charges}
+\end{figure}
+\section{Annexe 5 : Notes de stage}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{Note stage-1.pdf}
+    \caption{Quelques notes du début du stage}
+    \label{fig:notes}
+\end{figure}
+\section{Annexe 6 : Fichiers du simulateur}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{listeFilesSimu.png}
+    \caption{les fichiers du simulateur en front-end}
+    \label{fig:files}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{routeSimu.png}
+    \caption{La route API simulator}
+    \label{fig:route}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{controllerImage.png}
+    \caption{Le controller de la route}
+    \label{fig:controller}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{exempleTest.png}
+    \caption{Exemple de test}
+    \label{fig:test}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{sectionImage.png}
+    \caption{Section de la page}
+    \label{fig:section}
+\end{figure}
+
 
 \end{document}
 

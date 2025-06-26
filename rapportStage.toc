@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{L'application Numérobis}{11}{section*.4}%
 \contentsline {subsection}{\numberline {2.3.1}Explication de la mission}{11}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Le Back-end}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Le controller simulateur}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Le controller du simulateur}{12}{subsection.2.3.3}%
 \contentsline {subsubsection}{Documentation}{14}{section*.5}%
 \contentsline {subsubsection}{Tests}{14}{section*.6}%
 \contentsline {subsection}{\numberline {2.3.4}Le Front-End}{15}{subsection.2.3.4}%
@@ -26,3 +26,9 @@
 \contentsline {chapter}{\numberline {4}Sources}{24}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Glossaire}{25}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Annexes}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Annexe 1 : Les politiques de l'ATD 16}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Annexe 2 : Grille tarifaire}{28}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Annexe 3 : L'organigramme de l'ATD 16}{29}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Annexe 4 : Mon cahier des charges}{30}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Annexe 5 : Notes de stage}{31}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Annexe 6 : Fichiers du simulateur}{32}{section.6.6}%
