@@ -99,6 +99,7 @@ Enfin, je remercie aussi mon professeur référent, M. Sébastien FAUCOU.
 
 Dans le cadre de ma formation de Bachelor Universitaire Technologique deuxième année à l’Institut Universitaire Technologique de Nantes, j’ai réalisé un stage de 10 semaines au sein de l’Agence Technique du Département de la Charente. Lors de ce stage, j’ai mis en pratique ainsi que développé mes connaissances et compétences en développement web. J’ai donc développé une nouvelle fonctionnalité intégrée à l'application interne de l’agence. Il s'agit d'une page de simulation permettant à un agent de l'ATD 16 de calculer le prix qu’aurait à payer un adhérent pour les politiques auxquelles il souhaite souscrire en rentrant les variables nécessaires (nombre d’habitants, voirie, etc.).
 
+\vspace{1em}
 
 As part of my second-year Technological University Bachelor’s program at the Institut Universitaire Technologique de Nantes, I completed a 10-week internship within the Agence Technique du Département de la Charente. During this internship, I put into practice and developed my knowledge and skills in web development. I have therefore developed a new feature integrated into the agency’s internal application, it is a simulation page allowing an agent from ATD 16 to calculate the price that a member would have to pay for the policies they wish to join by entering the necessary variables. (number of inhabitants, roads, etc.).
 
@@ -122,7 +123,7 @@ J'ai eu la chance de pouvoir réaliser mon stage à l'Agence Technique Départem
 
 \vspace{1em}
 
-Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible, j'ai donc tout d'abord pris connaissance de la grille tarifaire et de ses contraintes: on m'a demandé de réaliser moi-même un cahier des charges fonctionnel et des wireframes, à partir des premières informations et besoins. Lors des réunions hebdomadaires avec l'équipe projet Numérobis, j'ai présenté ce cahier des charges fonctionnel, on m'a alors précisé l'étendue de la mission et exprimé de nouveaux besoins. Une fois le cadrage délimité, j'ai pu commencer le développement du simulateur. Le projet Numérobis suit un cycle de développement agile (méthode de travail nécessitant des réuinions quotidiennes), 
+Afin de réaliser cette mission de la meilleure manière et le plus efficacement possible, j'ai donc tout d'abord pris connaissance de la grille tarifaire et de ses contraintes: on m'a demandé de réaliser moi-même un cahier des charges fonctionnel et des wireframes, à partir des premières informations et besoins. Lors des réunions hebdomadaires avec l'équipe projet Numérobis, j'ai présenté ce cahier des charges fonctionnel, on m'a alors précisé l'étendue de la mission et exprimé de nouveaux besoins. Une fois le cadrage délimité, j'ai pu commencer le développement du simulateur. Le projet Numérobis suit un cycle de développement agile (méthode de travail nécessitant des réunions quotidiennes), 
 mais avec des réunions seulement deux fois par semaine du fait que François LALAY est le seul développeur, mais il souhaitait garder un contact avec les utilisateurs.
 
 \vspace{1em}
@@ -160,7 +161,7 @@ Enfin, l'ATD propose aussi des appuis ponctuels : services rendus irrégulièrem
 
 \subsection{Environnement de Travail}
 
-En ce qui concerne l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travaille sur un HP ProBook 450 G7, les 8 Go de RAM sont insuffisants afin de faire tourner le serveur de l'application web et de l'API* pour le développement, mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisi Visual Studio Code, c'est adapté au PC pas très performant que j'avais. Quelques extensions comme le visualiseur de base de données sont nécessaires afin de limiter le nombre d'outils. Afin de tester les routes API, j'ai utilisé Postman, logiciel permettant, entre autres, de faire des requêtes API. Mariadb est utilisé pour avoir une copie de la base de données de production en local. Pour la gestion de projet j'ai utilisé le tableau Kanban\footnote{C'est un tableau utilisant la méthode Kanban qui organise sont travail tâche par tâche} de Jira.
+En ce qui concerne l'environnement de travail, chaque pôle de l'agence possède son bureau sur le site de la Combe à Angoulême, Charente. Je travaille sur un HP ProBook 450 G7, les 8 Go de RAM sont insuffisants afin de faire tourner le serveur de l'application web et de l'API* pour le développement, mais je m'en sors plutôt bien, j'ai en plus deux écrans iiyama. Pour ce qui est du software, on m'a laissé le choix de l'IDE, j'ai choisi Visual Studio Code, c'est adapté au PC pas très performant que j'avais. Quelques extensions comme le visualiseur de base de données sont nécessaires afin de limiter le nombre d'outils. Afin de tester les routes API, j'ai utilisé Postman, logiciel permettant, entre autres, de faire des requêtes API. Mariadb est utilisé pour avoir une copie de la base de données de production en local. Pour la gestion de projet j'ai utilisé le tableau Kanban\footnote{C'est un tableau utilisant la méthode Kanban qui organise son travail tâche par tâche} de Jira.
 
 \section{Les outils}
 Au cours du stage, j'ai utilisé et découvert de nombreux outils, que je connaissais et utilisait déjà comme Git et GitLab, ou de nouveaux comme Jira pour faire de la gestion de projet. Cependant, les outils que j'ai le plus utilisés de loin, ce sont les documentations des langages et technologies utilisés.
@@ -172,7 +173,7 @@ Git est certainement le software le plus important dans le monde de l'informatiq
 Grâce à ce projet, mon utilisation a évolué, le dépôt contenant l'API* et l'application possède deux branches majeures "main" et "develop", ces deux branches sont protégées. Pour développer, je crée une nouvelle branche à partir de develop, puis commit des modifications au fur et à mesure. Une fois satisfait de mon code je le push sur la branche distante, et enfin crée une "merge request" afin que François LALAY puisse voir mes modifications et les accepter dans la branche develop. Puis une fois qu'il juge les avancées satisfaisantes, il merge la branche develop avec la branche main avant de passer au déploiement, ceci est donc le workflow\footnote{Le workflow c'est une suite de tâches} de développement.
 
 \subsection{Gestion de Projet}
-Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je développais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges fonctionnel (annexe 4), qui devait présenter ma vision du projet, que j'ai partagé lors de ma première réunion hebdomadaire avec l'équipe proejt Numérobis. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec l'équipe projet Numérobis, composée de :
+Le développement de ce simulateur étant mon plus gros et surtout long projet à ce jour, je ne pouvais pas négliger la gestion du projet, même si je développais seul dessus. Lors de mon arrivée, j'ai réalisé un cahier des charges fonctionnel (annexe 4), qui devait présenter ma vision du projet, que j'ai partagé lors de ma première réunion hebdomadaire avec l'équipe projet Numérobis. Effectivement, deux fois par semaine, le lundi puis le jeudi, il y a des réunions avec l'équipe projet Numérobis, composée de :
 \begin{itemize}
     \item Lionel CLERCQ, Responsable du pôle numérique
     \item Charlotte CIARDULLI, chargée du support administration numérique et logiciels métiers
@@ -223,7 +224,7 @@ En résumé, il faut une page permettant de :
 \end{enumerate}
 
 \subsection{Le Back-end}
-Le back-end* de l'application web est une API* Rest, développée avec Symfony et API platform. Afin de développer le simulateur, j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API platform. Cette période de compréhension du projet a été grandement accélérée par le fait qu'au 3ème semestre j'avais réalisé une application web en utilisant Symfony pour la SAE. J'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les contrôleurs et Doctrine\footnote{Outil facilitant la gestion de la base de données, grace au concept d'ORM (Object Relational Mapping) ca permet de ne pas écrire de SQL} mais aussi plus globalement avec le langage PHP en lui-même.
+Le back-end* de l'application web est une API* Rest, développée avec Symfony et API platform. Afin de développer le simulateur, j'ai dû comprendre la logique des entités Symfony, les relations entre elles ainsi que le fonctionnement des routes API platform. Cette période de compréhension du projet a été grandement accélérée par le fait qu'au 3ème semestre j'avais réalisé une application web en utilisant Symfony pour la SAE. J'étais donc déjà familier avec le fonctionnement de beaucoup d'aspects, comme les entités, les contrôleurs et Doctrine\footnote{Outil facilitant la gestion de la base de données, grace au concept d'ORM (Object Relational Mapping) ça permet de ne pas écrire de SQL} mais aussi plus globalement avec le langage PHP en lui-même.
 
 Cependant, il fallait que je comprenne le fonctionnement d'API platform, c'est un framework* PHP basé sur Symfony, l'application développée au 3ème semestre n'utilisait pas d'API, tout était fait dans le même projet, back et front. API platform permet de créer des API* REST avec Symfony. En créant les routes classiques automatiquement (GET, GET Collection, PUT, POST, DELETE), on peut aussi attacher des événements à ces routes comme "validate". Ce sont des services Symfony, ce qui va faire qu'un objet arrivant par cette route POST va être regardé afin de savoir s'il correspond aux contraintes de la base de données. De plus, API platform utilise le format Hydra JSON, ce qui permet de mieux comprendre ce qui est envoyé mais aussi de plus simplement retrouver des objets avec l'IRI (Internationalized Resource Identifier), c'est le champ "@id" dans "hydra:member".
 
@@ -278,11 +279,11 @@ Ayant écrit du code dans l'API, il faut bien évidemment le tester (exemple de 
 \subsection{Le Front-End}
 
 \subsubsection{Fonctionnement de React}
-React est tout d'abord une librairie Javascript, elle fonctionne sur le modèle d'un arbre, chaque composant possède des enfants qui peuvent être d'autres composants React ou bien du JSX (c'est le code qui ressemble à du HTML dans le retour des composants). L'affichage de ces composants s'appelle le rendu, quand un composant se rend, ca veut dire qu'il s'affiche à nouveau avec de nouvelles valeurs si besoin. Dans les composants rendus côté client, on peut utiliser des "hooks" react, ce sont des fonctions qui permettent de stocker des états ou encore d'utiliser le cycle de vie des composants. Par exemple "useState", ce hook permet de garder une valeur entre les différents cycles de vie, et donc chaque fois que cet état est mis à jour, le composant se rend à nouveau, ainsi que tous ses enfants. Afin d'optimiser les performances de l'application web, il faut viser le minimum de rendu possible.
+React est tout d'abord une librairie Javascript, elle fonctionne sur le modèle d'un arbre, chaque composant possède des enfants qui peuvent être d'autres composants React ou bien du JSX (c'est le code qui ressemble à du HTML dans le retour des composants). L'affichage de ces composants s'appelle le rendu, quand un composant se rend, ça veut dire qu'il s'affiche à nouveau avec de nouvelles valeurs si besoin. Dans les composants, on peut utiliser des "hooks" react, ce sont des fonctions qui permettent de stocker des états ou encore d'utiliser le cycle de vie des composants. Par exemple "useState", ce hook permet de garder une valeur entre les différents cycles de vie, et donc chaque fois que cet état est mis à jour, le composant se rend à nouveau. Afin d'optimiser les performances de l'application web, il faut viser le minimum de rendu possible.
 
 \subsubsection{Le simulateur}
 
-Le simulateur se découpe en cinq zones majeures : un header, la liste des adhésions, le détail de l'adhésion sélectionné, l'importation d'une structure ainsi que les variables d'adhésions. Ces zones sont appelées "Cards", chaque card comporte des composant enfant affichant les informations (Annexe 6.6 : les fichiers du simulateur front-end).
+Le simulateur se découpe en cinq zones majeures : un header, la liste des adhésions, le détail de l'adhésion sélectionné, l'importation d'une structure ainsi que les variables d'adhésions. Ces zones sont appelées "Cards", chaque card comporte des composants enfants affichant les informations (Annexe 6.6 : les fichiers du simulateur front-end).
 
 \vspace{1em}
 
@@ -328,7 +329,7 @@ Ce composant est une liste d'"input contrôlés", un input contrôlé en React, 
     \label{fig:adhe-var}
 \end{figure}
 
-Comme expliqué précédemment, la vue mobile faisait partie des demandes dès le début du développement. La question de la vue mobile tombe plutôt dans le domaine du CSS que du React, même si quelques changements ont été nécessaires de ce côté, comme la création des deux modales de détail et d'import. Après avoir discuté avec mon maître de stage du design mobile, il m'a fait remarquer que dans la plupart des applications, notamment de scroll comme TikTok et Instagram réels, ont les actions placées sur le côté droit et en bas, les zones d'accessibilité du pouce.
+Comme expliqué précédemment, la vue mobile faisait partie des demandes dès le début du développement. La question de la vue mobile tombe plutôt dans le domaine du CSS que du React, même si quelques changements ont été nécessaires de ce côté, comme la création des deux modales de détail et d'import. Après avoir discuté avec mon maître de stage du design mobile, il m'a fait remarquer que dans la plupart des applications, notamment de défilement comme TikTok et Instagram réels, ont les actions placées sur le côté droit et en bas, les zones d'accessibilité du pouce.
 
 Tailwind CSS utilise un système de breakpoints\footnote{Ce sont points de rupture défini pour adapter le design d’un site aux différentes tailles d’écran}, par exemple avec le tag "md:" précédent une classe, celle-ci devient effective qu'à partir d'un affichage d'une largeur minimum de 768 pixels. Comme expliqué dans la documentation de Tailwind, ces paliers s'activent quand l'écran est supérieur à la largeur, il faut donc comprendre que l'affichage mobile doit être développé en premier, car on changera le comportement avec les marqueurs pour les écrans plus grands. Cependant, l'application Numérobis n'a pas été développée pour le mobile, et moi-même, m'y étant intéressé qu'une fois le simulateur fonctionnel, j'ai dû réécrire les classes Tailwind avec en configuration par défaut le mobile, et l'affichage bureau derrière des tags "md:". Ici, on a un contenant flex, avec une disposition en colonne pour la vue mobile (flex-col) puis en ligne si affichage plus large (md:flex-row).
 
@@ -363,7 +364,7 @@ Dans la première version du simulateur, j'ai utilisé les contextes de React po
 
 Ils fonctionnent sur le principe suivant : dans un composant parent, on crée un contexte et un état avec "useState".Puis dans le "return" du composant, on crée un "Provider" du contexte avec en valeur soit seulement l'état, soit l'état et sa méthode de modification si l'on a besoin de le modifier.
 
-Dans le simulateur, j'ai eu besoin de transmettre beaucoup d'informations dans les composants, je me suis donc très vite retrouvé avec beaucoup de contextes et de providers dans la section de ma page. Ce qui rend, d'une, le code très peu lisible, car tous les états sont créés dans ce composant et de deux un souci d'optimisation. Comme expliqué précédemment, lorsqu'un état change, le composant se rend à nouveau ainsi que tous ses enfants. Combinez ça avec plusieurs contextes qui peuvent être modifiés et on obtient une page qui se rend entièrement à chaque modification.
+Dans le simulateur, j'ai eu besoin de transmettre beaucoup d'informations dans les composants, je me suis donc très vite retrouvé avec beaucoup de contextes et de providers dans la section de ma page. Ce qui rend, d'une, le code très peu lisible, car tous les états sont créés dans ce composant et de deux un souci d'optimisation. Comme expliqué précédemment, lorsqu'un état change, le composant se rend à nouveau mais avec un contexte il rend aussi les composants qui utilisent ce contexte ou une partie. Combinez ça avec plusieurs contextes qui peuvent être modifiés et on obtient une page qui se rend entièrement à chaque modification.
 
 \begin{figure}[H]
     \centering
@@ -393,7 +394,7 @@ Ayant terminé ma mission principale plutôt rapidement, j'ai réalisé d'autres
     \label{fig:header-mob}
 \end{figure}
 
-Afin de toujours avoir le header accessible en vue mobile j'ai utilisé la position "sticky", c'est-à-dire que l'élément est dans le flux normal du document, mais si l'on scroll, le header devient fixe en haut de la fenêtre. Cela permet de garder le header en haut de page dans la vue bureau, mais aussi de toujours l'avoir en haut de l'écran quand on scroll sur mobile. J'ai aussi dû réduire le nombre d'informations comparé au header de la vue bureau afin que tout loge dans la largeur d'un mobile.
+Afin de toujours avoir le header accessible en vue mobile j'ai utilisé la position "sticky", c'est-à-dire que l'élément est dans le flux normal du document, mais si l'on défile, le header devient fixe en haut de la fenêtre. Cela permet de garder le header en haut de page dans la vue bureau, mais aussi de toujours l'avoir en haut de l'écran quand on défile sur mobile. J'ai aussi dû réduire le nombre d'informations comparé au header de la vue bureau afin que tout loge dans la largeur d'un mobile.
 
 J'ai ensuite adapté la disposition des différentes pages en mobile, de manière à ce qu'elles soient consultables. 
 
@@ -439,7 +440,7 @@ Ce projet fut très formateur et enrichissant. Le fait de développer en front-e
 
 \vspace{1em}
 
-Je suis conscient que le simulateur est perfectible, mais je suis cependant très fier de ce projet, mon plus long à ce jour. Je suis arrivé en n'ayant pas un grand affect pour le développemnt web, mais ce stage m'a fait changer d'opinion.
+Je suis conscient que le simulateur est perfectible, mais je suis cependant très fier de ce projet, mon plus long à ce jour. Je suis arrivé en n'ayant pas un grand affect pour le développement web, mais ce stage m'a fait changer d'opinion.
 
 \chapter{Sources}
 Toutes les sources en lignes ont été consultées en Juin 2025
